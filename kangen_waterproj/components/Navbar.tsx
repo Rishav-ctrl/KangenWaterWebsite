@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="https://via.placeholder.com/50x50.png?text=K" alt="Kangen Water Logo" width={50} height={50} className="mr-2" />
+          <Image src="/" alt="Kangen Water Logo" width={50} height={50} className="mr-2" />
           <span className="text-xl font-semibold text-blue-500">Kangen Water</span>
         </Link>
         {/* Navigation Links */}
