@@ -19,7 +19,8 @@ export default function Navbar() {
         </div>
         {/* Contact Button */}
         <Link href="#contact" className="hidden md:inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full">
-          Contact St's
+        Contact St&apos;s
+
         </Link>
         {/* Mobile Menu (you can add this later) */}
         <div className="md:hidden">
