@@ -4,10 +4,12 @@ export default function HomePage() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="relative bg-blue-100 py-24 md:py-48 overflow-hidden">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-8">Unlock the Power of Alkaline Water</h1>
-          <p className="text-lg md:text-xl text-teal-600 mb-10">
+      <section className="relative bg-blue-100 overflow-hidden">
+        <div className="container mx-auto text-center py-32 md:py-48">
+          <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-6">
+            Unlock the Power of Alkaline Water
+          </h1>
+          <p className="text-lg md:text-xl text-teal-600 mb-8">
             Experience enhanced hydration, vital minerals, and potential health benefits with every sip.
           </p>
           <button className="bg-teal-500 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded-full text-lg">
@@ -15,21 +17,21 @@ export default function HomePage() {
           </button>
         </div>
 
-        {/* Water Wave Image */}
-        <div className="absolute bottom-0 left-0 right-0">
+        {/* Water Wave Image Below the Content */}
+        <div className="w-full">
           <Image
             priority
-            src="/wave.png" 
+            src="/wave.png"
             alt="Gentle water waves flowing"
             width={1920}
-            height={300}
-            className="w-full object-cover opacity-70"
+            height={400}
+            className="w-full object-cover"
           />
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 md:py-24 bg-blue-50">
+      <section className="py-20 md:py-28 bg-blue-50">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-semibold text-blue-700 mb-6">The Amazing Benefits</h2>
@@ -45,7 +47,7 @@ export default function HomePage() {
           </div>
           <div>
             <Image
-              src="/alkaline-water-glass.png" // Replace with your image path in the public folder
+              src="/alkaline-water-glass.png"
               alt="Refreshing glass of alkaline water"
               width={700}
               height={500}
@@ -56,7 +58,7 @@ export default function HomePage() {
       </section>
 
       {/* Science of pH Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <Image
@@ -80,7 +82,7 @@ export default function HomePage() {
       </section>
 
       {/* Experience the Difference Section */}
-      <section className="py-16 md:py-24 bg-blue-50">
+      <section className="py-20 md:py-28 bg-blue-50">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-semibold text-blue-700 mb-6">Feel the Difference</h2>
@@ -93,13 +95,54 @@ export default function HomePage() {
           </div>
           <div>
             <Image
-              src="/bottle.png" 
+              src="/bottle.png"
               alt="Sleek water bottle filled with pure water"
               width={700}
               height={500}
               className="rounded-lg shadow-md"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-semibold text-blue-700 mb-12">What Our Customers Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Riya Sharma',
+                text: 'Kangen Water has changed my life! I feel more energetic and fresh throughout the day.'
+              },
+              {
+                name: 'Aarav Joshi',
+                text: 'Never thought water could make such a difference. Highly recommend it to everyone!'
+              },
+              {
+                name: 'Priya Thapa',
+                text: 'Even my skin feels better now. Love this water!'
+              }
+            ].map((t, index) => (
+              <div key={index} className="bg-blue-50 p-6 rounded-xl shadow">
+                <p className="text-gray-700 italic mb-4">"{t.text}"</p>
+                <p className="text-blue-700 font-semibold">- {t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Slider Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-200 to-teal-100 text-center">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-blue-800 mb-6">Ready to Make the Switch?</h2>
+          <p className="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
+            Experience the purity and benefits of alkaline water with Kangen. Join thousands who already made the change.
+          </p>
+          <button className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded-full text-lg">
+            Get Yours Now
+          </button>
         </div>
       </section>
     </main>
