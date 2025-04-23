@@ -128,6 +128,7 @@ export default function HomePage() {
               }
             ].map((t, index) => (
               <div key={index} className="bg-blue-50 p-6 rounded-xl shadow">
+                // eslint-disable-next-line react/no-unescaped-entities
                 <p className="text-gray-700 italic mb-4">"{t.text}"</p>
                 <p className="text-blue-700 font-semibold">- {t.name}</p>
               </div>
