@@ -2,12 +2,15 @@ import Image from 'next/image';
 
 export default function HomePage() {
   return (
-    <main className="pt-20">
+    <main className="pt-0">
       {/* Hero Section */}
       <section className="relative bg-blue-100 overflow-hidden">
         <div className="container mx-auto text-center py-32 md:py-48">
-          <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-6">
-            Unlock the Power of Alkaline Water
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-6">
+           Kangen Water Nepal
+          </h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+           Change Your Water, Change Your Life ! 
           </h1>
           <p className="text-lg md:text-xl text-teal-600 mb-8">
             Experience enhanced hydration, vital minerals, and potential health benefits with every sip.
@@ -21,10 +24,10 @@ export default function HomePage() {
         <div className="w-full">
           <Image
             priority
-            src="/wave.png"
+            src="/secwave.png"
             alt="Gentle water waves flowing"
             width={1920}
-            height={400}
+            height={200}
             className="w-full object-cover"
           />
         </div>
