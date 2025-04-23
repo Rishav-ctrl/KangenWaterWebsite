@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import PhSlider from '@/components/PhSlider';
+import Antioxidant from '@/components/Antioxidant';
 
 export default function ScienceSection() {
   return (
@@ -6,7 +8,7 @@ export default function ScienceSection() {
       <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-semibold text-blue-700 mb-8">The Science of Alkaline Water</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
           {/* Left Section */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-semibold text-blue-500 mb-4">Alkaline Water</h3>
@@ -23,32 +25,10 @@ export default function ScienceSection() {
             />
           </div>
 
-          {/* Middle Section - Placeholder for Animation */}
-          <div className="flex justify-center items-center bg-blue-200 rounded-lg shadow-md p-8 md:p-16">
-            {/* This area will contain the pH and Antioxidant animation */}
-            <div className="w-full h-full flex flex-col justify-center items-center">
-              <h4 className="text-lg font-semibold text-blue-600 mb-4">Interactive Area</h4>
-              <div className="mb-4">
-                {/* Placeholder for pH Slider */}
-                <div className="bg-gray-300 h-8 w-64 rounded-full">
-                  <div className="bg-green-400 h-8 rounded-full w-1/2"></div> {/* Example slider position */}
-                </div>
-                <p className="text-sm text-gray-500 mt-1">pH: [Value]</p>
-              </div>
-              <div>
-                {/* Placeholder for Antioxidant (ORP) Slider */}
-                <div className="bg-gray-300 h-8 w-64 rounded-full">
-                  <div className="bg-orange-400 h-8 rounded-full w-1/3"></div> {/* Example slider position */}
-                </div>
-                <p className="text-sm text-gray-500 mt-1">ORP: [Value] mV</p>
-              </div>
-              <div className="mt-8">
-                {/* Placeholder for Central Animation */}
-                <div className="w-48 h-48 bg-blue-400 rounded-full flex items-center justify-center text-white font-bold">
-                  Animation
-                </div>
-              </div>
-            </div>
+          {/* Middle Section - Slider Integration */}
+          <div className="md:col-span-1 flex flex-col gap-10 justify-center items-center bg-white rounded-lg shadow-md p-6 md:p-10">
+            <PhSlider />
+            <Antioxidant />
           </div>
 
           {/* Right Section */}
