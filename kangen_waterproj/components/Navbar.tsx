@@ -48,8 +48,8 @@ export default function Navbar() {
         {/* Pills */}
         <div className="bg-white rounded-full shadow-md px-6 py-2 flex space-x-6">
           <Link href="#home" className="text-gray-800 hover:text-blue-500 font-medium">Home</Link>
-          <Link href="#buy" className="text-gray-800 hover:text-blue-500 font-medium">About Kangen Water</Link>
-          <Link href="#science" className="text-gray-800 hover:text-blue-500 font-medium">Science</Link>
+          <Link href="#about" className="text-gray-800 hover:text-blue-500 font-medium">About Kangen Water</Link>
+          <Link href="#science" className="text-gray-800 hover:text-blue-500 font-medium">Properties</Link>
           <Link href="#benefits" className="text-gray-800 hover:text-blue-500 font-medium">Benefits</Link>
           <Link href="#buy" className="text-gray-800 hover:text-blue-500 font-medium">Products</Link>
           <Link href="#buy" className="text-gray-800 hover:text-blue-500 font-medium">Where to Buy</Link>

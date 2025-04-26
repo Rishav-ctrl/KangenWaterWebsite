@@ -1,100 +1,150 @@
 import Image from 'next/image';
 import PhSlider from '@/components/PhSlider';
 import Antioxidant from '@/components/Antioxidant';
+import Link from 'next/link';
 
 export default function ScienceSection() {
   return (
-    <section id="science" className="py-16 md:py-24 bg-gray-100">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-700 mb-8">The Science of Alkaline Water</h2>
+    <section id="science" className="py-16 md:py-24 bg-gray-50">
+      <div className="container mx-auto px-4">
+        {/* Hero Section */}
+        <div className="text-center mb-20">
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
+            Kangen Water का 3 अद्भुत Properties!
+          </h1>
+          <p className="text-lg md:text-xl text-gray-700">
+            Antioxidant power, Alkalinity, र Micro-Clustered Molecules ले तपाईंको स्वास्थ्यलाई नयाँ उचाइमा पुर्याउँछ। जानौं कसरी!
+          </p>
+          <Link href="#core-properties">
+            <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
+              Explore Now
+            </button>
+          </Link>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
-          {/* Left Section */}
-          <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold text-blue-500 mb-4">Alkaline Water</h3>
-            <p className="text-gray-600 mb-6">
-              Wot percaa lo for ploirvl arat intores piet inepgaling skelding
-              aitu vahtfrieid fnealaar wate fto soalcot water.
+        {/* Core Properties Section */}
+        <div id="core-properties" className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+          {/* Antioxidant */}
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-blue-600 mb-3">🛡️ Antioxidant Power (Negative ORP)</h3>
+            <p className="text-gray-700 mb-4">
+              <strong>Free Radicals</strong> ले शरीरमा oxidation बढाउँछन् जसले aging र disease ल्याउँछ।<br />
+              <strong>Kangen Water</strong> को Negative ORP (~ -470) ले यो oxidation process लाई slow गर्छ।
             </p>
-            <Image
-              src="https://images.unsplash.com/photo-1589318073495-18eb9f699913?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY4MTh8MHwxfHNlYXJjaHw0fHxib3R0bGVkJTIwd2F0ZXIlMjBzaWRlfGVufDB8fHx8MTcwNTU2NjEwOXww&ixlib=rb-4.0.3&q=80&w=400"
-              alt="Alkaline Water Bottle"
-              width={400}
-              height={300}
-              className="rounded-lg shadow-md mx-auto md:mx-0"
-            />
+            <p className="text-gray-600 italic">
+              "जसरी काटेको स्याउ चाँडै खैरो हुन्छ (oxidation), हाम्रो छाला पनि बिस्तारै aging गर्छ। Kangen Water को antioxidants ले यो गति कम गर्छ।"
+            </p>
+            <div className="mt-4 flex justify-center">
+              <Image src="/aging.png" alt="Oxidation Example" width={300} height={200} />
+            </div>
           </div>
 
-          {/* Middle Section - Slider Integration */}
-          <div className="md:col-span-1 flex flex-col gap-10 justify-center items-center bg-white rounded-lg shadow-md p-6 md:p-10">
-            <PhSlider />
-            <Antioxidant />
-          </div>
-
-          {/* Right Section */}
-          <div className="text-center md:text-left">
-            <h3 className="text-xl font-semibold text-blue-500 mb-4">Alkaline</h3>
-            <p className="text-gray-600 mb-6">
-              Alkaline Water anotliat on trortrhiy aorossatine water
-              vei.
+          {/* Alkalinity */}
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-blue-600 mb-3">⚖️ Alkalinity</h3>
+            <p className="text-gray-700 mb-4">
+              अधिकांश रोगहरू acidic शरीरमा फस्टाउँछन्। Kangen Water ले तपाईंको शरीरलाई alkaline राख्न मद्दत गर्छ।
             </p>
-            <div className="bg-blue-100 rounded-lg p-6 shadow-md">
-              <h4 className="text-lg font-semibold text-blue-600 mb-2">Alkaline Water</h4>
-              <ul className="text-gray-600 text-sm">
-                <li className="mb-1">
-                  <span className="inline-block w-4 h-4 rounded-full bg-red-500 mr-2"></span>
-                  aklikne eoloinid aclcikn atfllat
-                </li>
-                <li className="mb-1">
-                  <span className="inline-block w-4 h-4 rounded-full bg-green-500 mr-2"></span>
-                  acllacen tocalog
-                </li>
+            <p className="text-gray-600 italic mb-3">
+              “Disease cannot thrive in an alkaline body.” — Dr. Otto Warburg
+            </p>
+            <div className="bg-blue-100 p-4 rounded-lg">
+              <p className="font-semibold text-sm mb-2">Acidic vs Alkaline Foods</p>
+              <ul className="text-sm text-gray-700">
+                <li><strong>Acidic:</strong> Soda, Red Meat, Fried Foods</li>
+                <li><strong>Alkaline:</strong> Vegetables, Fruits, Kangen Water</li>
               </ul>
-              <div className="mt-4 flex justify-around">
-                <div>
-                  <span className="text-xl font-semibold text-blue-700">+30</span>
-                </div>
-                <div>
-                  <span className="text-xl font-semibold text-green-700">+70</span>
-                </div>
-                <div>
-                  <span className="text-xl font-semibold text-orange-700">+70</span>
-                </div>
+              <div className="mt-4">
+                <Image src="/ph-scale.png" alt="pH Scale" width={300} height={80} />
               </div>
+            </div>
+          </div>
+
+          {/* Micro-Clustering */}
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-semibold text-blue-600 mb-3">💧 Micro-Clustering</h3>
+            <p className="text-gray-700 mb-4">
+              साधारण पानीमा ठूलो molecular cluster हुन्छ (~15-20 molecules), Kangen Water मा सानो (~5-6 molecules)।
+            </p>
+            <ul className="text-sm text-gray-700 list-disc pl-5 mb-4">
+              <li>छिटो Absorption</li>
+              <li>Deep Hydration</li>
+              <li>Boosted Stamina and Focus</li>
+            </ul>
+            <p className="text-gray-600 italic">
+              "Nepali मा भनौं भने, Kangen पानी 'हल्का' लाग्छ र छिट्टै पिउँदा energy दिन्छ!"
+            </p>
+            <div className="mt-4">
+              <Image src="/micro-vs-large-cluster.png" alt="Water Molecule Clusters" width={300} height={100} />
             </div>
           </div>
         </div>
 
-        {/* Research & Studies Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h4 className="text-lg font-semibold text-blue-500 mb-2">ANOL ALIIOS & STOPMET</h4>
-            <p className="text-gray-600 text-sm">
-              Worlibus us arhin yanc athve lciey blinka talt afolatiy
-              woheganic andis itbloest anklies.
-            </p>
+        {/* Sliders Section */}
+        <div className="mb-20">
+          <div className="mb-14">
+            <h2 className="text-3xl font-bold text-center text-blue-700 mb-2">pH Level अनुसार पानीको प्रभाव जान्नुहोस्!</h2>
+            <p className="text-center text-gray-700 mb-6">pH 2.5 देखि pH 11.0 सम्मका फरक-फरक पानीका गुणहरू।</p>
+            <div className="max-w-2xl mx-auto">
+              <PhSlider />
+            </div>
           </div>
+
           <div>
-            <h4 className="text-lg font-semibold text-blue-500 mb-2">MEICATISHILL FINE vetuellatiy</h4>
-            <p className="text-gray-600 text-sm">
-              Ton fneeling ah traionetly oof ttione tucarlion floatc aatiik
-              posnatimdes slouist acxinsttoer.
-            </p>
+            <h2 className="text-3xl font-bold text-center text-blue-700 mb-2">ORP Level ले के असर गर्छ?</h2>
+            <p className="text-center text-gray-700 mb-6">Higher Negative ORP = Higher Antioxidant Power = Better Protection!</p>
+            <div className="max-w-2xl mx-auto">
+              <Antioxidant />
+            </div>
           </div>
-          <div>
-            <h4 className="text-lg font-semibold text-blue-500 mb-2">MEERIEED PHIOR ricostivd</h4>
-            <p className="text-gray-600 text-sm">
-              Dent tecint in torfed luailrde ticarlf cart glatte
-              pactustby waterjoees.
-            </p>
+        </div>
+
+        {/* Comparison Table */}
+        <div className="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-20">
+          <h3 className="text-2xl font-semibold text-blue-700 mb-6 text-center">Free Radicals vs Antioxidants</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border border-gray-200">
+              <thead>
+                <tr className="bg-blue-100">
+                  <th className="px-4 py-2">Free Radicals (Bad)</th>
+                  <th className="px-4 py-2">Antioxidants (Good)</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-700">
+                <tr>
+                  <td className="px-4 py-2 border">Promote Aging</td>
+                  <td className="px-4 py-2 border">Fight Aging</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border">Cause DNA Damage</td>
+                  <td className="px-4 py-2 border">Repair Cells</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border">Increase Disease Risk</td>
+                  <td className="px-4 py-2 border">Strengthen Immunity</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2 border">Found in Pollution, Smoke</td>
+                  <td className="px-4 py-2 border">Found in Fruits, Kangen Water</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div>
-            <h4 className="text-lg font-semibold text-blue-500 mb-2">Malvies walid Intekleaties</h4>
-            <p className="text-gray-600 text-sm">
-              Sut uoln unit the uriog sor
-              Q Sonsiadicaties.
-            </p>
-          </div>
+          <p className="text-center text-sm text-gray-600 mt-4">
+            Kangen Water — Natural Source of Antioxidants to protect you from Free Radical damage.
+          </p>
+        </div>
+
+        {/* Final CTA */}
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
+            अब तपाईंले बुझ्नुभयो किन Kangen Water स्वास्थ्यको लागि अद्भुत हो! 🌟
+          </h2>
+          <Link href="#contact">
+            <button className="mt-4 px-8 py-3 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition">
+              Get Your Kangen Machine Now!
+            </button>
+          </Link>
         </div>
       </div>
     </section>

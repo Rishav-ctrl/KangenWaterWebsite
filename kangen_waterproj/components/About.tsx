@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       {/* About Kangen Section */}
-<section className="py-24 md:py-32 bg-white">
+<section id="about" className="py-24 md:py-32 bg-white">
   <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
       <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water?</h2>
@@ -103,34 +103,44 @@ export default function About() {
       </section>
 
       {/* Technology Section */}
-      <section className="py-24 md:py-32 bg-white">
-  <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <div className="text-center">
+<section className="py-20 md:py-24 bg-white">
+  <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div className="flex flex-col items-center gap-6">
       <Image
-        src="/electrolysis-diagram.png"
-        alt="Electrolysis Process Diagram"
-        width={700}
-        height={500}
-        className="rounded-xl shadow-lg mx-auto"
+        src="/electrolysis process.png"
+        alt="Electrolysis Process"
+        width={300}
+        height={200}
+        className="rounded-2xl shadow-xl"
+      />
+      <Image
+        src="/micclus.png"
+        alt="Microcluster Water"
+        width={300}
+        height={200}
+        className="rounded-2xl shadow-xl"
       />
     </div>
     <div>
-      <h2 className="text-3xl md:text-4xl font-semibold text-blue-700 mb-6 leading-snug">The Science Behind Kangen</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-6">The Science Behind Kangen</h2>
       <p className="text-md md:text-lg text-gray-700 mb-4">
-        Kangen पानी एकदम खास प्रकारको ionized alkaline पानी हो जुन <strong>electrolysis</strong> भन्ने process बाट तयार हुन्छ। यो process मा पानीलाई दुई भागमा छुट्याइन्छ — एक तर्फ <strong>alkaline water</strong> (पिउन योग्य) र अर्को तर्फ <strong>acidic water</strong> (बाहिरी प्रयोगको लागि)।
+        Kangen पानी भनेको <strong>electrolysis</strong> technology बाट तयार भएको ionized alkaline पानी हो। 
+        यो process मा पानीलाई दुई भागमा छुट्याइन्छ: <strong>alkaline water</strong> (पिउन योग्य) र <strong>acidic water</strong> (बाहिरी प्रयोगको लागि)।
       </p>
       <p className="text-md md:text-lg text-gray-700 mb-4">
-        यो प्रणालीले platinum-coated titanium प्लेटहरू प्रयोग गर्छ जुन पानीमा करेन्ट पठाएर पानीका molecules लाई पुनः arrange गर्छ। यसले गर्दा पानी साना <strong>micro-clusters</strong> मा परिवर्तन हुन्छ जुन शरीरले छिटो absorb गर्न सक्छ। Nepali मा भन्नुपर्दा, “यो पानी त छिट्टै शरीरमा घुल्ने हो, एकदम हल्का लाग्छ पिउँदा।” 😌
+        मशीनले platinum-coated titanium प्लेटहरूबाट करेन्ट पठाउँछ र पानीका molecules लाई साना <strong>micro-clusters</strong> मा परिवर्तन गर्छ। 
+        यस्ता पानीले शरीरलाई छिटो hydrate गर्छ। Nepali मा भन्नुपर्दा — "यो पानी त पिएर तुरुन्तै हल्का महसुस हुन्छ, घुल्दो पानी जस्तो।" 🥰
       </p>
       <ul className="list-disc list-inside text-gray-700 space-y-2">
-        <li>Harmful acid हटाइ शरीरलाई alkaline balance मा राख्छ</li>
-        <li>-ORP (Oxidation Reduction Potential) ले antioxidant power दिन्छ</li>
-        <li>Micro-clustered water ले छिटो hydration दिन्छ</li>
-        <li>Calcium, Magnesium जस्ता healthy minerals retain हुन्छ</li>
+        <li>शरीरबाट harmful acid हटाउँछ र alkaline balance बनाइदिन्छ।</li>
+        <li>Negative ORP (Oxidation Reduction Potential) ले antioxidant power दिन्छ।</li>
+        <li>Micro-clustered पानीले छिटो hydration र energy boost गर्छ।</li>
+        <li>Calcium र Magnesium जस्ता जरुरी minerals जोगाउँछ।</li>
       </ul>
     </div>
   </div>
 </section>
+
 
     </>
   );
