@@ -49,13 +49,13 @@ export default function ScienceSection() {
               “Disease cannot thrive in an alkaline body.” — Dr. Otto Warburg
             </p>
             <div className="bg-blue-100 p-4 rounded-lg">
-              <p className="font-semibold text-sm mb-2">Acidic vs Alkaline Foods</p>
+              <p className="font-semibold text-sm mb-2 text-black">Acidic vs Alkaline Foods</p>
               <ul className="text-sm text-gray-700">
                 <li><strong>Acidic:</strong> Soda, Red Meat, Fried Foods</li>
                 <li><strong>Alkaline:</strong> Vegetables, Fruits, Kangen Water</li>
               </ul>
               <div className="mt-4">
-                <Image src="/ph-scale.png" alt="pH Scale" width={300} height={80} />
+                <Image src="/acidalk.png" alt="pH Scale" width={500} height={100} />
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function ScienceSection() {
               "Nepali मा भनौं भने, Kangen पानी 'हल्का' लाग्छ र छिट्टै पिउँदा energy दिन्छ!"
             </p>
             <div className="mt-4">
-              <Image src="/micro-vs-large-cluster.png" alt="Water Molecule Clusters" width={300} height={100} />
+              <Image src="/microclustering.png" alt="Water Molecule Clusters" width={300} height={500} />
             </div>
           </div>
         </div>
