@@ -5,6 +5,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 
 const benefits = [
+ 
   {
     title: "Better hydration",
     image: "/hydration.jpeg", 
@@ -42,7 +43,7 @@ export default function BenefitsSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-16 bg-white">
+    <section id="benefits" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-blue-700 mb-6">Benefits of Kangen Water</h2>
         <p className="text-lg text-gray-600 mb-10">
@@ -90,5 +91,6 @@ export default function BenefitsSection() {
         )}
       </div>
     </section>
+   
   );
 }

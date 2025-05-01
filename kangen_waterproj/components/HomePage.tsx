@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HomePage() {
   return (
-    <main className="pt-0">
+    <main id="home" className="pt-0">
       {/* Hero Section */}
       <section className="relative bg-blue-100 overflow-hidden">
         <div className="container mx-auto text-center py-32 md:py-48">

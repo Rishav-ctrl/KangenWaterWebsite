@@ -18,7 +18,7 @@ export default function WhereToBuySection() {
                 <strong>Address:</strong> Tilottama-4, Drivertole, Rupandehi
               </p>
               <p className="text-lg">
-                <strong>Contact:</strong>{' '}
+                <strong>Contact :</strong>{' '}
                 <a href="tel:+9779857071120" className="text-blue-600">9857071120</a> /{' '}
                 <a href="tel:+9779857047817" className="text-blue-600">9857047817</a>
               </p>
