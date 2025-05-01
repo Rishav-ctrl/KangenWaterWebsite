@@ -99,32 +99,45 @@ export default function ScienceSection() {
         <div className="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-20">
           <h3 className="text-2xl font-semibold text-blue-700 mb-6 text-center">Free Radicals vs Antioxidants</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-left border border-gray-200">
-              <thead>
-                <tr className="bg-blue-100">
-                  <th className="px-4 py-2 text-black">Free Radicals (Bad)</th>
-                  <th className="px-4 py-2 text-black">Antioxidants (Good)</th>
-                </tr>
-              </thead>
-              <tbody className="text-gray-700">
-                <tr>
-                  <td className="px-4 py-2 border">Promote Aging</td>
-                  <td className="px-4 py-2 border">Fight Aging</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border">Cause DNA Damage</td>
-                  <td className="px-4 py-2 border">Repair Cells</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border">Increase Disease Risk</td>
-                  <td className="px-4 py-2 border">Strengthen Immunity</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-2 border">Found in Pollution, Smoke</td>
-                  <td className="px-4 py-2 border">Found in Fruits, Kangen Water</td>
-                </tr>
-              </tbody>
-            </table>
+          <table className="w-full text-left border border-gray-200 mt-8">
+  <thead>
+    <tr className="bg-blue-100">
+      <th className="px-4 py-2 text-black">Free Radicals (Bad) <br /><span className="text-sm text-gray-600">हानिकारक तत्वहरू</span></th>
+      <th className="px-4 py-2 text-black">Antioxidants (Good) <br /><span className="text-sm text-gray-600">फाइदाजनक तत्वहरू</span></th>
+    </tr>
+  </thead>
+  <tbody className="text-gray-700 text-base">
+    <tr>
+      <td className="px-4 py-2 border">Promote Aging<br /><span className="text-sm text-gray-500">चाँडै बुढो बनाउँछ</span></td>
+      <td className="px-4 py-2 border">Fight Aging<br /><span className="text-sm text-gray-500">ताजा र यौवन कायम राख्छ</span></td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2 border">Cause DNA Damage<br /><span className="text-sm text-gray-500">शरीरको DNA मा क्षति पुर्‍याउँछ</span></td>
+      <td className="px-4 py-2 border">Repair Cells<br /><span className="text-sm text-gray-500">कोशिकाहरूको मर्मत गर्छ</span></td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2 border">Increase Disease Risk<br /><span className="text-sm text-gray-500">रोगहरूको खतरा बढाउँछ</span></td>
+      <td className="px-4 py-2 border">Strengthen Immunity<br /><span className="text-sm text-gray-500">रोगसँग लड्ने क्षमता बढाउँछ</span></td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2 border">Found in Pollution, Smoke<br /><span className="text-sm text-gray-500">धुवाँ, प्रदूषणमा पाइन्छ</span></td>
+      <td className="px-4 py-2 border">Found in Fruits, Kangen Water<br /><span className="text-sm text-gray-500">फलफूल र Kangen Water मा पाइन्छ</span></td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2 border">Make Skin Dull<br /><span className="text-sm text-gray-500">छाला मर्दा र थाकेको देखिन्छ</span></td>
+      <td className="px-4 py-2 border">Give Skin a Glow<br /><span className="text-sm text-gray-500">छालामा चमक ल्याउँछ</span></td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2 border">Cause Tiredness<br /><span className="text-sm text-gray-500">थकान महसुस गराउँछ</span></td>
+      <td className="px-4 py-2 border">Boost Energy<br /><span className="text-sm text-gray-500">उर्जा दिन्छ, active बनाउँछ</span></td>
+    </tr>
+    <tr>
+      <td className="px-4 py-2 border">Cause Inflammation<br /><span className="text-sm text-gray-500">शरीरमा सूजन ल्याउँछ</span></td>
+      <td className="px-4 py-2 border">Reduce Inflammation<br /><span className="text-sm text-gray-500">सूजन कम गर्छ</span></td>
+    </tr>
+  </tbody>
+</table>
+
           </div>
           <p className="text-center text-sm text-gray-600 mt-4">
             Kangen Water — Natural Source of Antioxidants to protect you from Free Radical damage.
@@ -133,10 +146,8 @@ export default function ScienceSection() {
 
         {/* Final CTA */}
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4">
-            अब तपाईंले बुझ्नुभयो किन Kangen Water स्वास्थ्यको लागि अद्भुत हो! 🌟
-          </h2>
-          <Link href="#contact">
+          
+          <Link href="#buy">
             <button className="mt-4 px-8 py-3 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition">
               Get Your Kangen Machine Now!
             </button>

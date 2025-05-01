@@ -58,7 +58,7 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <Link
-          href="#contact"
+          href="#buy"
           className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full"
         >
           Contact 

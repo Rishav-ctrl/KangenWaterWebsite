@@ -64,18 +64,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Slider Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-200 to-teal-100 text-center">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-blue-800 mb-6">Ready to Make the Switch?</h2>
-          <p className="text-lg text-gray-700 mb-8 max-w-xl mx-auto">
-            Experience the purity and benefits of alkaline water with Kangen. Join thousands who already made the change.
-          </p>
-          <button className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded-full text-lg">
-            Get Yours Now
-          </button>
-        </div>
-      </section>
+   
     </main>
   );
 }

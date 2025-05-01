@@ -1,77 +1,51 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { X, ChevronRight } from "lucide-react";
+import { X } from "lucide-react";
 
 const benefits = [
   {
     title: "Better hydration",
+    image: "/hydration.jpeg", 
     description: `Kangen Water ले दिएको hydration अरू normal पानी भन्दा far better हुन्छ। यसको कारण हो – यो पानी ionize भएर साना साना molecules मा change हुन्छ (4-6 molecules per cluster)। यसले गर्दा हाम्रो body ले यो पानी छिट्टै absorb गर्न सक्छ, जसले गर्दा शरीर hydrated र active रहन्छ – without feeling bloated, even if you drink 8 glasses a day.
-  
-  आम पानी पिउँदा कहिलेकाहीं पेट भारी हुने, puffiness हुने जस्तो लाग्न सक्छ, तर Kangen Water ले यस्तो feeling minimize गर्छ।
-  
-  Hydration मात्र तिर्खा मेटाउने कुरा होइन – यो energy, skin को glow, digestion, र हाम्रो body system smoothly चलाउनको लागि एकदमै important हुन्छ।`,
-    color: "bg-blue-50",
-    iconBg: "bg-blue-200",
-    iconColor: "text-blue-700",
+
+आम पानी पिउँदा कहिलेकाहीं पेट भारी हुने, puffiness हुने जस्तो लाग्न सक्छ, तर Kangen Water ले यस्तो feeling minimize गर्छ।
+
+Hydration मात्र तिर्खा मेटाउने कुरा होइन – यो energy, skin को glow, digestion, र हाम्रो body system smoothly चलाउनको लागि एकदमै important हुन्छ।`,
   },
-  
   {
     title: "Antioxidant boost",
-    description: `Kangen Water मा negative ions हुन्छन्, जसलाई antioxidants पनि भनिन्छ। यी antioxidants ले शरीरभित्र भएका free radicals लाई neutralize गर्न मद्दत गर्छन्। Free radicals भनेको त्यस्ता हानिकारक तत्व हुन्, जुन aging, skin dullness, थकान, अनि दीर्घ रोगहरूको मुख्य कारण बन्न सक्छ।
-  
-  जब antioxidants ले oxidative stress कम गर्छ, तब हाम्रो शरीर youthful, energetic र balanced महसुस गर्छ। Skin राम्रो देखिन्छ, immunity strong हुन्छ, र cells पनि healthy रहन्छन् — जसले hydration लाई अझ effective बनाउँछ।`,
-    color: "bg-green-50",
-    iconBg: "bg-green-200",
-    iconColor: "text-green-700",
+    image: "/oxidative.png",
+    description: `Kangen Water मा negative ions हुन्छन्, जसलाई antioxidants पनि भनिन्छ। यी antioxidants ले शरीरभित्र भएका free radicals लाई neutralize गर्न मद्दत गर्छन्। Free radicals भनेको त्यस्ता हानिकारक तत्व हुन्, जुन aging, skin dullness, थकान, अनि दीर्घ रोगहरूको मुख्य कारण बन्न सक्छ।`,
   },
-  
   {
     title: "Detoxification",
-    description: `Kangen Water को micro-clustered structure र antioxidant गुणले मिलेर शरीरबाट toxins हटाउन सजिलो बनाउँछ। यो पानीले cells सम्म छिटो पुगेर waste materials लाई flush out गर्न मद्दत गर्छ।
-  
-  Antioxidants ले free radicals neutralize गर्छन्, जुन aging, थकान, र chronic रोगहरूको main कारण हुन्। जब oxidative stress कम हुन्छ, तब हाम्रो body naturally clean, fresh र energetic महसुस गर्छ।
-  
-  Regular Kangen Water पिउँदा तपाईंलाई light, active, र internally healthy feel हुन्छ — जुन overall well-being को लागि एकदम फाइदाजनक छ।`,
-    color: "bg-yellow-50",
-    iconBg: "bg-yellow-200",
-    iconColor: "text-yellow-700",
+    image: "/detox.png",
+    description: `Kangen Water को micro-clustered structure र antioxidant गुणले मिलेर शरीरबाट toxins हटाउन सजिलो बनाउँछ। यो पानीले cells सम्म छिटो पुगेर waste materials लाई flush out गर्न मद्दत गर्छ।`,
   },
-  
   {
     title: "Glowing skin",
-    description: "Hydration helps maintain skin elasticity and a youthful glow by improving blood circulation and detoxification.",
-    color: "bg-pink-50",
-    iconBg: "bg-pink-200",
-    iconColor: "text-pink-700",
+    image: "/glowskin.png",
+    description: `Kangen Water, especially यसको slightly acidic “Beauty Water” (pH 5.5–6), छालाको लागि धेरै फाइदाजनक मानिन्छ। Healthy skin को natural pH पनि लगभग 5.5 नै हुने भएकाले, यो पानीले तपाईंको skin को pH balance restore गर्छ, जसले गर्दा dryness, irritation, र pimples कम हुन्छन्। यसको micro-clustered structure ले पानीलाई छालामा deep absorb गर्न मद्दत गर्छ, जसले skin लाई soft, plump, hydrated र glowing बनाउँछ। Fine lines र wrinkles कम देखिन्छन्। Kangen Water मा हुने molecular hydrogen एक powerful antioxidant हो, जसले free radicals लाई neutralize गरेर aging slow गर्छ र skin elastic बनाउँछ, youthful look दिन्छ। Beauty Water लाई gentle cleanser वा toner को रूपमा प्रयोग गर्दा impurities हट्छन् तर skin को natural oil भने बचेर रहन्छ, जसले skin लाई clean, fresh र irritation-free राख्छ। Regular प्रयोग गर्दा dark spots कम हुन्छन्, pigmentation हल्का हुन्छ, र complexion साफ देखिन्छ। साथै, यो पानीले oil production balance गरेर acne को risk पनि घटाउँछ। तपाईंले यसलाई facial mist, toner, makeup remover, वा bath soak को रूपमा पनि use गर्न सक्नुहुन्छ for all-day skin hydration र glow।
+
+`,
   },
   {
     title: "Enhanced energy",
-    description: "Optimized hydration supports metabolism and nutrient delivery, which helps in sustaining energy throughout the day.",
-    color: "bg-purple-50",
-    iconBg: "bg-purple-200",
-    iconColor: "text-purple-700",
-  }
+    image: "/energy.png",
+    description: `Kangen Water को मुख्य फाइदामध्ये एक हो – Enhanced Energy. यसको micro-clustered structure भएकोले पानी छिटो र गहिरो रुपमा body ले absorb गर्छ, जसले गर्दा cells-level hydration मिल्छ र तपाईंलाई energetic feel हुन्छ। हल्का dehydration पनि fatigue को कारण बन्न सक्छ, त्यसैले राम्रो hydration energy को लागि बहुत जरूरी हो। Kangen Water को pH level alkaline (8.5–9.5) हुने भएकाले यसले शरीरको acidity लाई neutralize गर्न मद्दत गर्छ, जसले धेरैलाई active र कम sluggish feel गराउँछ। साथै, यसमा हुने molecular hydrogen एक powerful antioxidant हो, जसले oxidative stress कम गर्छ – जुन थकानको एक major कारण हो। Molecular hydrogen ले metabolism boost गर्छ, mitochondria (energy factories of cells) लाई support गर्छ, र physical recovery पनि fast बनाउँछ। यसले inflammation कम गर्न मद्दत गर्छ, जसले शरीरलाई long-lasting energy दिन सहयोग पुर्याउँछ। यिनै कारणहरूले गर्दा धेरै user हरूले Kangen Water पिएपछि आफ्नो energy level बढेको महसुस गरेका छन्।`,
+  },
 ];
 
 export default function BenefitsSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const openModal = (index: number) => setActiveIndex(index);
-  const closeModal = () => setActiveIndex(null);
-  const nextBenefit = () => {
-    setActiveIndex((prev) => {
-      if (prev === null) return 0;
-      return (prev + 1) % benefits.length;
-    });
-  };
-
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-blue-700 mb-6">Benefits</h2>
-        <p className="text-lg text-gray-600 mb-12">
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4 text-center">
+        <h2 className="text-3xl font-bold text-blue-700 mb-6">Benefits of Kangen Water</h2>
+        <p className="text-lg text-gray-600 mb-10">
           Learn about how this water supports your wellness journey
         </p>
 
@@ -79,57 +53,41 @@ export default function BenefitsSection() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`${benefit.color} bg-opacity-60 rounded-lg shadow-md p-6 cursor-pointer hover:scale-105 transition-transform duration-300`}
-              onClick={() => openModal(index)}
+              onClick={() => setActiveIndex(index)}
+              className="cursor-pointer border rounded-xl shadow hover:shadow-lg transition p-2"
             >
-              <div className={`w-12 h-12 rounded-full ${benefit.iconBg} flex items-center justify-center mb-4`}>
-                <span className={`${benefit.iconColor} text-lg font-bold`}>{index + 1}</span>
+              <div className="relative w-full h-56 rounded-lg overflow-hidden mb-4">
+                <Image
+                  src={benefit.image}
+                  alt={benefit.title}
+                  layout="fill"
+                  objectFit="cover"
+                />
               </div>
-              <h3 className={`text-xl font-semibold ${benefit.iconColor} mb-2`}>{benefit.title}</h3>
-              <p className="text-gray-600 text-sm">
-                Tap to explore full benefit.
-              </p>
+              <h3 className="text-xl font-semibold text-black">{benefit.title}</h3>
+              <p className="text-sm text-gray-500 mt-2">Click to view more</p>
             </div>
           ))}
         </div>
 
-        <AnimatePresence>
-          {activeIndex !== null && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
-            >
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.8, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white rounded-2xl max-w-lg w-full p-6 relative text-left shadow-xl"
+        {activeIndex !== null && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-xl max-w-xl w-full p-6 relative">
+              <button
+                onClick={() => setActiveIndex(null)}
+                className="absolute top-3 right-3 text-gray-600 hover:text-black"
               >
-                <button
-                  onClick={closeModal}
-                  className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-                <h3 className="text-xl font-bold text-blue-700 mb-3">
-                  {benefits[activeIndex].title}
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  {benefits[activeIndex].description}
-                </p>
-                <button
-                  onClick={nextBenefit}
-                  className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-800"
-                >
-                  Next benefit <ChevronRight className="w-4 h-4" />
-                </button>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+                <X className="w-5 h-5" />
+              </button>
+              <h3 className="text-4xl font-bold text-blue-700 mb-4">
+                {benefits[activeIndex].title}
+              </h3>
+              <p className="text-gray-700 whitespace-pre-line">
+                {benefits[activeIndex].description}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
