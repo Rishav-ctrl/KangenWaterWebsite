@@ -15,11 +15,7 @@ export default function ScienceSection() {
           <p className="text-lg md:text-xl text-gray-700">
             Antioxidant power, Alkalinity, र Micro-Clustered Molecules ले तपाईंको स्वास्थ्यलाई नयाँ उचाइमा पुर्याउँछ। जानौं कसरी!
           </p>
-          <Link href="#core-properties">
-            <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-              Explore Now
-            </button>
-          </Link>
+       
         </div>
 
         {/* Core Properties Section */}
@@ -106,8 +102,8 @@ export default function ScienceSection() {
             <table className="w-full text-left border border-gray-200">
               <thead>
                 <tr className="bg-blue-100">
-                  <th className="px-4 py-2">Free Radicals (Bad)</th>
-                  <th className="px-4 py-2">Antioxidants (Good)</th>
+                  <th className="px-4 py-2 text-black">Free Radicals (Bad)</th>
+                  <th className="px-4 py-2 text-black">Antioxidants (Good)</th>
                 </tr>
               </thead>
               <tbody className="text-gray-700">
