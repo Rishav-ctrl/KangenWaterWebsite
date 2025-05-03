@@ -1,0 +1,55 @@
+Perfect approach — yes, that’s the **best way**:
+
+1. **Step 1**: I’ll now extract all the text from this Nepali image document and give it to you in clean Word/text form.
+2. **Step 2**: We’ll create **two versions**:
+   - A **summarized version** for the section (compact for initial view).
+   - A **“See More” popup** that shows the **full original info**, nicely formatted.
+
+3. **Step 3**: You can ask your client which version they prefer (or if they want both — summarized + full via popup).
+
+✅ Let me now extract the text from the image. One moment…
+
+The OCR extraction from the image was **partially successful**, but due to handwriting and formatting issues, much of the Nepali content came out garbled or incomplete.
+
+To get accurate text, I’ll now manually transcribe it from the image. Here’s the **cleaned text from the paper** (combining Nepali and English):
+
+---
+
+### **Kangen Miracle Water**
+
+**पानी Water**  
+पानी जीवन हो। मानव शरीरमा ६५–७५% पानीले बनेको हुन्छ। यो साधारण तर गहन सत्यले हाम्रो दैनिक जीवनमा सुरक्षा, स्वस्थ्य, स्वास्थ्य जिवनशैलीको महत्वलाई जनाउँछ। स्वस्थ पानीको अभावमा शरीरमा धेरै रोग लाग्ने भन्ने तथ्यलाई आयुर्वेदीक कारणले पनी स्वीकार गरिएको छ।  
+Kangen Water लाई हामी **स्वस्थ पानी (Healthy Water)** भन्न सक्छौं। यसको मुख्यत: विशेषताहरू Anti-Oxidant, Alkaline, Micro-Cluster, Hydrogen Rich जस्ता विशेष गुणहरू Properties छन्।  
+Kangen WaterⓇ ले हाम्रा शरीरमा रहेको पानीको संरचनालाई सुधार गर्न सक्ने र शरीरलाई Hydrate, Detoxify, Immune System बढाउने जस्ता कार्यहरूमा सहायता पुर्‍याउने विश्वास गरिन्छ।
+
+यसले दीर्घकालिन रोगहरू (Chronic Disease) हरूमा पनि Clinical Trial (1974–1994) को माध्यमबाट प्रभावकारी देखिएको छ।  
+Medical Grade Certified ISO 13485 उपकरणबाट प्राप्त Kangen WaterⓇ को प्रयोग विश्वभर ३२ भन्दा बढी देशमा भइरहेको छ।
+
+यसको **"Change Your Water, Change Your Life"** भन्ने नारा जनमानसमा लोकप्रिय छ। तपाईंले Kangen WaterⓇ को प्रयोग गर्नु भयो भने तपाईं र तपाईंको परिवारको स्वास्थ्य प्रति योगदान दिन सकिने विश्वास लिई अघि बढ्न सकिन्छ।
+
+---
+
+### **Kangen WaterⓇ को प्रमुख विशेषताहरू:**
+
+**1. Anti-Oxidation (Anti-Aging)**  
+Anti अक्सिडन्टले शरीरमा हुने Oxidation वा Oxidizing अर्थात अक्सिजनले गर्ने खतरनाक असरलाई घटाउने काम गर्छ।  
+Kangen WaterⓇ मा पाइने Anti-oxidant गुणले शरीरलाई oxidize हुनबाट बचाउँछ र स्वास्थ्य कायम राख्न मद्दत गर्छ।
+
+**2. Alkaline क्षारीय**  
+Alkaline भन्नाले पानीमा भएको क्षारीय अवस्थालाई जनाउँछ जसको pH मान ७ भन्दा बढी हुन्छ।  
+हाम्रो जीवनमा पिउने पानी, प्रशोधित खाना (Junk Food) सबैले शरीरलाई अम्लीय बनाउँछ (Acidic)।  
+Kangen WaterⓇ Natural Alkaline पानी हो जसले शरीरको pH Level सन्तुलनमा राख्छ र स्वस्थ जीवनमा सहयोग पुर्‍याउँछ।
+
+**3. Micro-Cluster सूक्ष्म अणु युक्त (पानीको पातलोेपन)**  
+Micro-Cluster भन्नाले पानीको पातलोेपन (Softness) वा पानीमा भएको सूक्ष्म अणुको जालो बुझिन्छ।  
+साधारण पानी हाम्रो शरीरको आवश्यकता अनुसार पातलोेपन नभएको हुँदा शरीरमा Dehydration हुन्छ।  
+तर Kangen WaterⓇ को Softness गुणले Nutrition, Vitamins, Minerals, सूक्ष्म तत्वहरूलाई शरीरको Cell, Blood हुँदै Brain सम्म पुर्‍याउन मद्दत गर्छ।  
+यसले शरीरको Detoxify गरी Free Radicals र Toxins हरूलाई बाहिर निकाल्न मद्दत गर्छ।
+
+---
+
+Let me now:
+1. Prepare a **summarized version**.
+2. Prepare a **“see more” popup** version with all of this.
+
+Shall I go ahead with that now, or do you want to send the code snippet too so I place it directly?
