@@ -1,21 +1,70 @@
-import Navbar from '@/components/Navbar';
-import HomePage from '@/components/HomePage';
-import ScienceSection from '@/components/ ScienceSection';
-import BenefitsSection from '@/components/BenefitsSection';
-import WhereToBuySection from '@/components/ WhereToBuySection';
-import About from '@/components/About';
+import Image from 'next/image';
 
-
-export default function Page() {
+export default function HomePage() {
   return (
-    <div>
-      <Navbar />
-      <HomePage />
-      <About />
-      <ScienceSection />
-      <BenefitsSection />
-      <WhereToBuySection />
+    <main id="home" className="pt-0">
+      {/* Hero Section */}
+      <section className="relative bg-blue-100 overflow-hidden">
+        <div className="container mx-auto text-center py-32 md:py-48">
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-6">
+           Kangen Water Nepal
+          </h1>
+          <h3 className="text-xl md:text-3xl font-bold text-black mb-6">
+           Change Your Water, Change Your Life ! 
+          </h3>
+          <p className="text-lg md:text-xl text-teal-600 mb-8 text - italic">
+          "Trusted by 6,500+ doctors | Certified in Japan | 5-in-1 Water System"
+          </p>
+          <button className="bg-teal-500 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded-full text-lg">
+            Discover Kangen Water
+          </button>
+        </div>
+
+        {/* Water Wave Image Below the Content */}
+        <div className="w-full">
+          <Image
+            priority
+            src="/secwave.png"
+            alt="Gentle water waves flowing"
+            width={1920}
+            height={200}
+            className="w-full object-cover"
+          />
+        </div>
+      </section>
+
       
-    </div>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-semibold text-blue-700 mb-12">What Our Customers Say</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Riya Sharma',
+                text: 'Kangen Water has changed my life! I feel more energetic and fresh throughout the day.'
+              },
+              {
+                name: 'Aarav Joshi',
+                text: 'Never thought water could make such a difference. Highly recommend it to everyone!'
+              },
+              {
+                name: 'Priya Thapa',
+                text: 'Even my skin feels better now. Love this water!'
+              }
+            ].map((t, index) => (
+              <div key={index} className="bg-blue-50 p-6 rounded-xl shadow">
+                // eslint-disable-next-line react/no-unescaped-entities
+                <p className="text-gray-700 italic mb-4">"{t.text}"</p>
+                <p className="text-blue-700 font-semibold">- {t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+   
+    </main>
   );
 }
