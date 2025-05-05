@@ -1,41 +1,107 @@
+"use client";
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-export default function HomePage() {
+const images = [
+  '/aging.png',
+  '/glowskin.png',
+  '/machine1.png',
+];
+
+export default function ProductsPage() {
+  const [index, setIndex] = useState(0);
+  const [manual, setManual] = useState(false);
+
+  useEffect(() => {
+    if (!manual) {
+      const interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [manual]);
+
+  const nextImage = () => {
+    setManual(true);
+    setIndex((prev) => (prev + 1) % images.length);
+    setTimeout(() => setManual(false), 8000);
+  };
+
   return (
-    <main id="home" className="pt-0">
-      {/* Hero Section */}
-      <section className="relative bg-blue-100 overflow-hidden">
-        <div className="container mx-auto text-center py-32 md:py-48">
-        <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-6">
-           Kangen Water Nepal
-          </h1>
-          <h3 className="text-xl md:text-3xl font-bold text-black mb-6">
-           Change Your Water, Change Your Life ! 
-          </h3>
-          <p className="text-lg md:text-xl text-teal-600 mb-8 text - italic">
-          "Trusted by 6,500+ doctors | Certified in Japan | 5-in-1 Water System"
-          </p>
-          <button className="bg-teal-500 hover:bg-teal-700 text-white font-semibold py-3 px-8 rounded-full text-lg">
-            Discover Kangen Water
+    <main className="bg-white min-h-screen">
+      {/* Scrolling News Bar */}
+      <div className="bg-blue-600 text-white py-2 px-4 overflow-hidden whitespace-nowrap text-sm animate-marquee">
+        <span>Yo pani Japan ko medical ma use huncha... Certified in over 150 countries... Trusted by thousands of doctors... </span>
+      </div>
+
+      {/* Dynamic Image Banner */}
+      <div className="relative w-full h-[500px] bg-blue-100 overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute w-full h-full top-0 left-0"
+          >
+            <Image
+              src={images[index]}
+              alt={`Banner ${index}`}
+              layout="fill"
+              objectFit="cover"
+              className="transition-opacity duration-1000"
+            />
+          </motion.div>
+        </AnimatePresence>
+
+        <div className="absolute bottom-6 right-6 z-10">
+          <button
+            onClick={nextImage}
+            className="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 shadow"
+          >
+            Next Image
           </button>
         </div>
+      </div>
 
-        {/* Water Wave Image Below the Content */}
-        <div className="w-full">
-          <Image
-            priority
-            src="/secwave.png"
-            alt="Gentle water waves flowing"
-            width={1920}
-            height={200}
-            className="w-full object-cover"
-          />
+      {/* Hero Titles */}
+      <section className="text-center mt-16 px-4">
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-700 mb-4">Kangen Water Nepal</h1>
+        <h2 className="text-2xl md:text-4xl text-black font-semibold mb-3">Change Your Water, Change Your Life!</h2>
+        <p className="text-lg text-teal-600 italic">"Trusted by 6,500+ doctors | Certified in Japan | 5-in-1 Water System"</p>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 px-6 bg-blue-50">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-blue-700 mb-6">What is Kangen Water?</h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            Kangen Water is ionized alkaline water that promotes better hydration, detoxification, and overall health.
+            It’s used in hospitals and clinics in Japan and gaining global recognition for its benefits.
+          </p>
+        </div>
+
+        {/* News Cards */}
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {[1, 2, 3].map((i) => (
+            <a
+              key={i}
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition border border-blue-100"
+            >
+              <h3 className="text-blue-600 font-bold text-xl mb-2">Article Title {i}</h3>
+              <p className="text-gray-600 text-sm">Short summary of the news article. Click to read more.</p>
+              <p className="text-blue-500 text-sm mt-2">Read more →</p>
+            </a>
+          ))}
         </div>
       </section>
 
-      
-
-      {/* Testimonials Section */}
+      {/* Testimonials */}
       <section className="py-20 bg-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-semibold text-blue-700 mb-12">What Our Customers Say</h2>
@@ -55,7 +121,6 @@ export default function HomePage() {
               }
             ].map((t, index) => (
               <div key={index} className="bg-blue-50 p-6 rounded-xl shadow">
-                // eslint-disable-next-line react/no-unescaped-entities
                 <p className="text-gray-700 italic mb-4">"{t.text}"</p>
                 <p className="text-blue-700 font-semibold">- {t.name}</p>
               </div>
@@ -63,8 +128,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-   
     </main>
   );
 }
