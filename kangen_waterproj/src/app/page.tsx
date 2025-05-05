@@ -5,8 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
   '/slider1.png',
-  '/glowskin.png',
-  '/machine1.png',
+  '/slider2.png',
+  '/slider3.png',
+  '/slider4.png',
 ];
 
 export default function ProductsPage() {
@@ -77,8 +78,7 @@ export default function ProductsPage() {
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-gray-700 text-lg leading-relaxed">
-            Kangen Water is ionized alkaline water that promotes better hydration, detoxification, and overall health.
-            It’s used in hospitals and clinics in Japan and gaining global recognition for its benefits.
+          Kangen Miracle Water स्वच्छ, स्वास्थ्यवर्धक र जीवनदायी पानी हो, जसमा Anti-Oxidation, Alkaline, र Micro-Cluster जस्ता विशेषताहरू छन्। जापानमा लामो अनुसन्धान र क्लिनिकल ट्रायलपछि विकास गरिएको यो पानीले शरीरलाई Hydrate, Detoxify र Immune System बलियो बनाउन सहयोग गर्छ। यसको नारा हो: “Change Your Water, Change Your Life.
           </p>
         </div>
 
@@ -92,8 +92,10 @@ export default function ProductsPage() {
               rel="noopener noreferrer"
               className="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition border border-blue-100"
             >
-              <h3 className="text-blue-600 font-bold text-xl mb-2">Article Title {i}</h3>
-              <p className="text-gray-600 text-sm">Short summary of the news article. Click to read more.</p>
+              <h3 className="text-blue-600 font-bold text-xl mb-2">Cristiano Ronaldo Drinks Kangen Water!{i}</h3>
+              <p className="text-gray-600 text-sm">Cristiano Ronaldo जस्तो स्वास्थ्यप्रेमी व्यक्तिले Kangen Water K8 प्रयोग गर्छन् भन्ने देखाउन पाउँदा हामी खुसी छौं। स्वास्थ्य जीवनशैली चाहने सबैलाई प्रेरणा मिलोस्। आजै सम्पर्क गर्नुहोस् र आफ्नो Kangen प्राप्त गर्नुहोस्! 💧👍🏼
+
+अझ छोटो वा फरक शैलीमा चाहिएको भए भन्नुहोस्।</p>
               <p className="text-blue-500 text-sm mt-2">Read more →</p>
             </a>
           ))}
