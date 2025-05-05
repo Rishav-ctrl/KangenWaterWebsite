@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  '/aging.png',
+  '/slider1.png',
   '/glowskin.png',
   '/machine1.png',
 ];
@@ -74,9 +74,8 @@ export default function ProductsPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-6 bg-blue-50">
+      <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-blue-700 mb-6">What is Kangen Water?</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
             Kangen Water is ionized alkaline water that promotes better hydration, detoxification, and overall health.
             It’s used in hospitals and clinics in Japan and gaining global recognition for its benefits.
