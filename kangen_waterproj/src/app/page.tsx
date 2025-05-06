@@ -84,7 +84,8 @@ export default function ProductsPage() {
   return (
     <main className="bg-white min-h-screen font-sans relative">
       {/* Dynamic Image Banner with buttons */}
-      <div className="relative w-full h-auto sm:h-[400px] overflow-hidden" {...handlers}>
+      <div className="relative w-full h-[250px] sm:h-[400px] overflow-hidden" {...handlers}>
+
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -100,6 +101,7 @@ export default function ProductsPage() {
               layout="fill"
               objectFit="cover"
               className="object-cover object-center"
+              sizes="(max-width: 640px) 100vw, 100vw"
               priority
             />
           </motion.div>
