@@ -29,13 +29,13 @@ export default function Footer() {
           <h2 className="text-xl font-semibold text-blue-600 mb-4">Contact Us</h2>
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
-              <Phone size={18} /> <span>+977-9800000000</span>
+              <Phone size={18} /> <span>+977-9857047817</span>
             </li>
             <li className="flex items-center gap-2">
-              <Mail size={18} /> <span>info@kangenwaternepal.com</span>
+              <Mail size={18} /> <span>kangenwaternepal7@gmail.com</span>
             </li>
             <li className="flex items-center gap-2">
-              <Globe size={18} /> <span>www.kangenwaternepal.com</span>
+              <Globe size={18} /> <span>www.kangenwaternepal.com.np</span>
             </li>
           </ul>
         </div>
