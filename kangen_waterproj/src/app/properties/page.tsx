@@ -147,7 +147,7 @@ export default function ScienceSection() {
         {/* Final CTA */}
         <div className="text-center">
           
-          <Link href="#buy">
+          <Link href="/buy">
             <button className="mt-4 px-8 py-3 bg-green-600 text-white rounded-full shadow hover:bg-green-700 transition">
               Get Your Kangen Machine Now!
             </button>
