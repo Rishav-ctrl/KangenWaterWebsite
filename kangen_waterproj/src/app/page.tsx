@@ -50,7 +50,7 @@ const infoLinks = [
 
 export default function ProductsPage() {
   const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [factIndex, setFactIndex] = useState(0);
 
   useEffect(() => {
