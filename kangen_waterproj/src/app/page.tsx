@@ -294,20 +294,42 @@ export default function ProductsPage() {
         </div>
       </section>
       {/* News Cards */}
-      <div className="mt-12 pb-16 grid gap-6 grid-cols-1 md:grid-cols-3">
-        {articles.map((article, i) => (
-          <div
-            key={i}
-            className="bg-white rounded-2xl border border-gray-200 shadow-md p-6 hover:shadow-lg transition"
-          >
-            <h3 className="text-lg font-semibold text-blue-700 mb-2">{article.title}</h3>
-            <p className="text-sm text-gray-600 leading-snug">{article.content}</p>
-            <a href={article.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-2">
-              <p className="text-sm text-blue-500">Read more →</p>
-            </a>
-          </div>
-        ))}
+      <div className="mt-12 pb-16 grid gap-8 grid-cols-1 md:grid-cols-3">
+  {articles.map((article, i) => (
+    <div
+      key={i}
+      className="bg-white rounded-3xl border border-gray-200 shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col h-[500px] w-full overflow-hidden"
+    >
+
+      {/* Content */}
+      <div className="flex flex-col justify-between flex-grow">
+        <div>
+          <h3 className="text-xl font-bold text-blue-800 mb-3">{article.title}</h3>
+          <p className="text-sm text-gray-700 leading-relaxed line-clamp-4">
+            {article.content}
+          </p>
+        </div>
+
+        <a
+          href={article.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 text-blue-600 font-medium hover:underline"
+        >
+        {/* Thumbnail Image */}
+      <img
+        src="img.png"
+        alt={article.title}
+        className="w-full h-40 object-cover rounded-2xl mb-4"
+      />
+          Read more →
+        </a>
       </div>
+    </div>
+  ))}
+</div>
+
+
 
   
       {/* Floating "Did You Know" Bubble */}
