@@ -135,7 +135,7 @@ export default function ProductsPage() {
       </section>
      {/* About Section */}
      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto mb-12 flex flex-wrap items-center">
+        <div className="max-w-5xl mx-auto mb-12 flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">पानीको महत्व र कङ्गन मेसिन</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
