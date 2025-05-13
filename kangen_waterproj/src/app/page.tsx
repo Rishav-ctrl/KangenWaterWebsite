@@ -13,6 +13,12 @@ const articles = [
   { title: 'Used in Over 150 Countries', content: 'Kangen Water विश्वका 150 भन्दा बढी देशहरूमा प्रयोगमा ल्याइएको छ। यसको प्रचलन बढ्दो छ र विश्वासिलो पनि।',link:'https://kangenwater.in/#:~:text=What%20Doctor%20Said%20About%20Kangen%20Water%3F' },
 ];
 
+const cards = [
+{img: 'ronaldo1.jpg'},
+{img: 'secondcard.png'},
+{img: 'thirdcard.png'}
+];
+
 const facts = [
   'Kangen Water is certified by the Japanese Association of Preventive Medicine.',
   'Over 6500 doctors in Japan recommend Kangen Water.',
@@ -102,7 +108,7 @@ export default function ProductsPage() {
               layout="fill"
               objectFit="cover"
               className="object-cover object-center"
-              sizes="(max-width: 640px) 100vw, 100vw"
+              sizes="(max-width: 500px) 100vw, 100vw"
               priority
             />
           </motion.div>
@@ -318,10 +324,10 @@ export default function ProductsPage() {
         >
         {/* Thumbnail Image */}
       <img
-        src="img.png"
-        alt={article.title}
-        className="w-full h-40 object-cover rounded-2xl mb-4"
-      />
+  src={`/${cards[i].img}`}  // assuming the images are inside the public/ folder
+  alt={article.title}
+  className="w-full h-100 object-cover rounded-2xl mb-4"
+/>
           Read more →
         </a>
       </div>
