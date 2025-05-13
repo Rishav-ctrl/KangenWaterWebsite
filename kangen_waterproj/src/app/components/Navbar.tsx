@@ -42,7 +42,7 @@ export default function Navbar() {
     { href: '/properties', label: 'Properties' },
     { href: '/benefits', label: 'Benefits' },
     { href: '/products', label: 'Products' },
-    { href: '/buy', label: 'Where to Buy' },
+    { href: '/buy', label: 'Buy' },
   ];
 
   const isActive = (href: string) => pathname === href;
@@ -56,8 +56,8 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 md:px-20 lg:px-40 py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/kangen logo.jpeg" alt="Kangen Water Logo" width={50} height={50} className="mr-2" />
-          <span className="text-xl font-semibold text-blue-500">Kangen Water Nepal</span>
+          <Image src="/logo.png" alt="Kangen Water Logo" width={50} height={50} className="mr-2" />
+          <span className="text-l font-semibold text-blue-500">Kangen Water Nepal</span>
         </Link>
 
         {/* Desktop Menu */}
