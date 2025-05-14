@@ -48,7 +48,7 @@
 
           <div className="text-center">
             <Image
-              src="/machine1.png"
+              src="/macines/machine1.png"
               alt="Kangen Machine"
               width={350}
               height={450}
@@ -105,7 +105,7 @@
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <Image
-                src="/certificate 1.png"
+                src="/certificates/certificate 1.png"
                 alt="Certificate 1"
                 width={180}
                 height={180}
@@ -113,7 +113,7 @@
                 onClick={() => openModal('/certificate 1.png')}
               />
               <Image
-                src="/certificate 2.png"
+                src="/certificates/certificate 2.png"
                 alt="Certificate 2"
                 width={180}
                 height={180}
@@ -121,7 +121,7 @@
                 onClick={() => openModal('/certificate 2.png')}
               />
               <Image
-                src="/certificate 3.png"
+                src="/certificates/certificate 3.png"
                 alt="Certificate 3"
                 width={180}
                 height={180}
@@ -129,7 +129,7 @@
                 onClick={() => openModal('/certificate 3.png')}
               />
               <Image
-                src="/certificate 4.png"
+                src="/certificates/certificate 4.png"
                 alt="Certificate 4"
                 width={180}
                 height={180}
@@ -137,14 +137,13 @@
                 onClick={() => openModal('/certificate 4.png')}
               />
               <Image
-                src="/certificate 5.png"
+                src="/certificates/certificate 5.png"
                 alt="Certificate 5"
                 width={180}
                 height={180}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
                 onClick={() => openModal('/certificate 5.png')}
               />
-              {/* तपाईंले थप प्रमाणपत्रहरू यहाँ थप्न सक्नुहुन्छ */}
             </div>
           </div>
         </div>
@@ -166,14 +165,14 @@
         <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="flex flex-col items-center gap-6">
             <Image
-              src="/electrolysis process.png"
+              src="/genimgs/electrolysis process.png"
               alt="Electrolysis Process"
               width={300}
               height={200}
               className="rounded-2xl shadow-xl"
             />
             <Image
-              src="/micclus.png"
+              src="/genimgs/micclus.png"
               alt="Microcluster Water"
               width={300}
               height={200}
