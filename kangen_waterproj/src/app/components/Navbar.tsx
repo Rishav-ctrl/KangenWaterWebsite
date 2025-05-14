@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-6 md:px-20 lg:px-40 py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="Kangen Water Logo" width={50} height={50} className="mr-2" />
+          <Image src="/logos/logo.png" alt="Kangen Water Logo" width={50} height={50} className="mr-2" />
           <span className="text-l font-semibold text-blue-500">Kangen Water Nepal</span>
         </Link>
 
