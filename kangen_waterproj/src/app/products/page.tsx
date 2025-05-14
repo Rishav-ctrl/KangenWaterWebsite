@@ -254,7 +254,7 @@ const products = [
 ];
 
 export default function ProductsPage() {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [activeTab, setActiveTab] = useState<'specs' | 'images'>('specs');
 
   return (
