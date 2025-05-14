@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const products = [
+const products: Product[] = [
   {
     name: 'LeveLuk SD 501',
     img: 'sd501.jpg',
