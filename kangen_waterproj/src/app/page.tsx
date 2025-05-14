@@ -143,7 +143,7 @@ export default function ProductsPage() {
             </p>
           </div>
           <div className="w-full md:w-1/2 px-4">
-            <img src="/image2.png" alt="कङ्गन मेसिन" className="rounded-lg shadow-md" />
+            <img src="/genimgs/image2.png" alt="कङ्गन मेसिन" className="rounded-lg shadow-md" />
           </div>
         </div>
 
@@ -168,7 +168,7 @@ export default function ProductsPage() {
             </ul>
           </div>
           <div className="w-full md:w-1/2 px-4 order-1 md:order-2">
-            <img src="/machine1.png" alt="कङ्गन मेसिनका विशेषताहरू" className="rounded-lg shadow-md" />
+            <img src="/macines/machine1.png" alt="कङ्गन मेसिनका विशेषताहरू" className="rounded-lg shadow-md" />
           </div>
         </div>
 
@@ -188,7 +188,7 @@ export default function ProductsPage() {
             </p>
           </div>
            <div className="w-full md:w-1/2 px-4">
-            <img src="/kangenmean.png" alt="पानीका विशेषताहरू" className="rounded-lg shadow-md" />
+            <img src="/genimgs/kangenmean.png" alt="पानीका विशेषताहरू" className="rounded-lg shadow-md" />
           </div>
         </div>
 
@@ -221,7 +221,7 @@ export default function ProductsPage() {
             </ul>
           </div>
            <div className="w-full md:w-1/2 px-4 order-1 md:order-2">
-            <img src="/micclus.png" alt="कङ्गन पानीका फाइदाहरू" className="rounded-lg shadow-md" />
+            <img src="/genimgs/micclus.png" alt="कङ्गन पानीका फाइदाहरू" className="rounded-lg shadow-md" />
           </div>
         </div>
 
@@ -324,7 +324,7 @@ export default function ProductsPage() {
         >
         {/* Thumbnail Image */}
       <img
-  src={`/${cards[i].img}`}  // assuming the images are inside the public/ folder
+  src={`/cards/${cards[i].img}`}  
   alt={article.title}
   className="w-full h-100 object-cover rounded-2xl mb-4"
 />
