@@ -2,6 +2,17 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
+//defining products 
+type Product = {
+  name: string;
+  img: string;
+  features: string[];
+  description: string;
+  specs: string[][];
+  images: string[];
+};
+
+
 const products: Product[] = [
   {
     name: 'LeveLuk SD 501',
