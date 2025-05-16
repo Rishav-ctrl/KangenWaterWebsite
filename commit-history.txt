@@ -1,0 +1,43 @@
+7ff8a20 - Shrawak Hack - Fri May 16 14:49:26 2025 +0000 - updated linkspree's form submission handle.. Now almost complete
+14370d5 - Shrawak Hack - Fri May 16 03:14:42 2025 +0000 - updated formsubmit task
+d72c8ee - Shrawak Hack - Fri May 16 03:01:43 2025 +0000 - changed email
+bb286e3 - Shrawak Hack - Fri May 16 02:53:57 2025 +0000 - test form submit feature
+839595c - Shrawak Hack - Fri May 16 02:29:27 2025 +0000 - Updated all the product's labelled images
+0144358 - Shrawak Hack - Wed May 14 19:16:10 2025 +0000 - updated all the img sources, because sources were rearranged in proper folders to avoid mess up
+f99fac5 - Shrawak Hack - Wed May 14 19:01:26 2025 +0000 - Changed Navbar's logo src
+4cb6c92 - Shrawak Hack - Wed May 14 18:56:28 2025 +0000 - defined product before declaration
+bc4be72 - Shrawak Hack - Wed May 14 18:51:47 2025 +0000 - just changed function declaration type for deployment
+071be96 - Shrawak Hack - Wed May 14 18:44:41 2025 +0000 - just check for datatype,
+c9063c9 - Shrawak Hack - Wed May 14 18:32:05 2025 +0000 - Created and updated whole product page, added images of 8 products, created content popups, added who;e description, features, specs.. labeled image is remaining.. other full content is updated
+1830201 - Shrawak Hack - Tue May 13 17:37:21 2025 +0000 - little arrangement on layout design on homepage
+fa0a258 - Shrawak Hack - Tue May 13 17:29:01 2025 +0000 - More updates on Homepage, updated images, updated favicon icon, slight change on navbar
+a4bbe17 - Shrawak Hack - Tue May 13 14:46:08 2025 +0000 - added images in cards thumbnail, also enhanced quality in one image in slider
+20f88e6 - Shrawak Hack - Fri May 9 02:55:58 2025 +0000 - just updated news card in homepage, and added thumbnail image code, real image is to be implemented
+6a5f713 - Shrawak Hack - Wed May 7 09:24:22 2025 +0000 - arranged links, hyperlinks , button links
+28ec192 - Shrawak Hack - Wed May 7 08:51:45 2025 +0000 - Added lots of content and images in homepage, added new certificated in about page
+ce8d8ad - Shrawak Hack - Wed May 7 07:14:02 2025 +0000 - updated useRef for vercel
+4f49398 - Shrawak Hack - Tue May 6 18:23:17 2025 +0000 - slight change on  the image slider but nothing happened
+0f4164f - Shrawak Hack - Tue May 6 18:16:47 2025 +0000 - Changed and updated Navbar, homepage, added more infos
+ab85b45 - Shrawak Hack - Mon May 5 17:14:03 2025 +0000 - more updates on homepage
+0a08926 - Shrawak Hack - Mon May 5 15:37:35 2025 +0000 - slight modifications in homepage
+1da8973 - Shrawak Hack - Mon May 5 12:43:30 2025 +0000 - updated new homepage with sliding images
+a33a6f6 - Shrawak Hack - Mon May 5 11:54:36 2025 +0000 - Fix: Added dummy Products page to fix build
+d439b25 - Shrawak Hack - Sun May 4 16:30:03 2025 +0000 - Added footer, changes the paths of links to the navbar
+5867206 - Shrawak Hack - Sat May 3 17:11:41 2025 +0000 - just arranged file structure and copied tsx files
+6bb605c - Shrawak Hack - Sat May 3 13:08:45 2025 +0000 - Updated about page
+e542f50 - Shrawak Hack - Thu May 1 10:44:42 2025 +0000 - Created mobile freindly design, added hamburger in navbar, smooth scroll effect for different sections
+9f58e0d - Shrawak Hack - Thu May 1 10:00:41 2025 +0000 - Updated Benefit and Contact/buy section, embedded google map, corrected buttons and links, added contact, whatsapp and email contact, now the remaining page is : product page
+33201e6 - Shrawak Hack - Thu May 1 02:14:48 2025 +0000 - added new lucid react effect, ORP Slider Enhanced, Clickable benefit cards
+d0fa894 - Shrawak Hack - Mon Apr 28 17:42:09 2025 +0000 - added pictures in properties section and also customized the phslider section, with wave animation..
+1821fee - Shrawak Hack - Sat Apr 26 10:34:20 2025 +0000 - modified the properties page, integrated all contents
+75e5895 - Shrawak Hack - Fri Apr 25 17:51:33 2025 +0000 - Added new pages, Worked on About page, updated contents of about.. enhanced design and placeholders for about page
+1c8ab48 - Shrawak Hack - Wed Apr 23 12:08:07 2025 +0000 - Created slider animation for Antioxidant and PhSLider
+6ec704f - Shrawak Hack - Wed Apr 23 06:38:46 2025 +0000 - changed nextcinfig
+ce764b9 - Shrawak Hack - Wed Apr 23 06:30:20 2025 +0000 - disabled enlist to deploy
+0726db2 - Shrawak Hack - Wed Apr 23 06:22:59 2025 +0000 - Enlist check for vercel
+e02d8b0 - Shrawak Hack - Tue Apr 22 18:11:29 2025 +0000 - Updated homepage, added testimonials, and also uodated hero section, Installed new animation package : frame-motion
+a2a7ed1 - Shrawak Hack - Mon Apr 21 18:38:01 2025 +0000 - Updated Navbar and Homepage, added image
+4cb7ff9 - Shrawak Hack - Mon Apr 21 17:13:43 2025 +0000 - Fixed Navbar (') error, replaced with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`
+fde0149 - Shrawak Hack - Fri Apr 18 05:04:03 2025 +0000 - All remaining Pages basic content fillup ready
+202599e - Shrawak Hack - Fri Apr 18 04:36:49 2025 +0000 - Folder setup and basic navbar and homepage setup
+120f3ce - Shrawak Hack - Fri Apr 18 09:37:09 2025 +0545 - Initial commit
