@@ -37,7 +37,7 @@ const products: Product[] = [
       ['Cleaning System', 'Automatic'],
       ['Electrode Plates', '7 (Platinum Coated Titanium)'],
     ],
-    images: ['specifications.jpg', 'working.jpg'],
+    images: ['waterfilter.gif', 'working.jpg'],
   },
   {
   name: 'LeveLuk SD 501 Platinum',
@@ -71,7 +71,7 @@ const products: Product[] = [
     ['Electrode plates', '7'],
     ['Electrode material', 'Platinum Coated Titanium'],
   ],
-  images: [],
+  images: ['waterfilter.gif', 'working.jpg'],
 },
   {
   name: 'LeveLuk JR II',
@@ -101,7 +101,7 @@ const products: Product[] = [
     ['Electrode plates', '3'],
     ['Electrode material', 'Platinum Coated Titanium'],
   ],
-  images: [],
+  images: ['waterfilter.gif', 'working.jpg'],
 },
  {
   name: 'LeveLuk Super 501',
@@ -142,7 +142,7 @@ const products: Product[] = [
     ['Electrode plates', '12'],
     ['Electrode material', 'Platinum Coated Titanium'],
   ],
-  images: [],
+  images: ['waterfilter.gif', 'super501-scale.jpg'],
 },
  {
   name: 'Kangen 8',
@@ -192,7 +192,7 @@ const products: Product[] = [
     ['Electrode plates', '8'],
     ['Electrode material', 'Platinum Coated Titanium'],
   ],
-  images: [],
+  images: ['waterfilter.gif', 'working.jpg'],
 },
   {
   name: 'Kangen LeveLuk R',
@@ -219,7 +219,7 @@ const products: Product[] = [
     ['Electrode Plates', '3'],
     ['Electrode Material', 'Platinum-plated Titanium'],
   ],
-  images: [],
+  images: ['waterfilter.gif', 'product_levelukr_scale.jpg'],
 },
  {
   name: 'Kangen Ukon',
@@ -241,7 +241,7 @@ const products: Product[] = [
     ['Cultivation', 'Organically Grown in Yanbaru, Okinawa, Japan'],
     ['Free Of', 'Harmful Chemicals'],
   ],
-  images: [],
+  images: ['ukon.jpeg','ukon2.jpg','ukon3.png'],
 },
 {
   name: 'Anespa',
@@ -260,7 +260,7 @@ const products: Product[] = [
     ['System', 'Mineral Ion Water Activator'],
     ['Flow Rate', '2.6 – 4.0 gallons/min'],
   ],
-  images: [],
+  images: ['anespa-dx.jpg'],
 },
 ];
 
@@ -351,7 +351,7 @@ export default function ProductsPage() {
                 }`}
                 onClick={() => setActiveTab('images')}
               >
-                Labelled Images
+                Physical Details
               </button>
             </div>
 
