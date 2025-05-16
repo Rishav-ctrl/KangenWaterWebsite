@@ -1,16 +1,41 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { useSearchParams } from 'next/navigation'
 
 export default function WhereToBuySection() {
-  const searchParams = useSearchParams()
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    address: '',
+    phone: '',
+  })
 
-  useEffect(() => {
-    if (searchParams.get('submitted') === 'true') {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const res = await fetch('https://formspree.io/f/mgvkdkgz', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+
+    if (res.ok) {
       setSubmitted(true)
+      setFormData({ name: '', address: '', phone: '' })
+    } else {
+      alert('Something went wrong. कृपया फेरि प्रयास गर्नुहोस्।')
     }
-  }, [searchParams])
+
+    setIsSubmitting(false)
+  }
 
   return (
     <section id="buy" className="py-16 md:py-24 bg-gray-50">
@@ -116,8 +141,7 @@ export default function WhereToBuySection() {
         {/* Inquiry Form */}
         {!submitted && (
           <form
-            action="https://formsubmit.co/el/wicila"  
-            method="POST"
+            onSubmit={handleSubmit}
             className="mt-16 bg-white rounded-xl shadow-md p-6 max-w-xl mx-auto space-y-4"
           >
             <h3 className="text-xl font-semibold text-blue-700 mb-4 text-center">
@@ -129,6 +153,8 @@ export default function WhereToBuySection() {
               name="name"
               placeholder="तपाईंको नाम"
               className="w-full border border-gray-300 rounded-lg p-3 text-black placeholder:text-gray-700"
+              value={formData.name}
+              onChange={handleChange}
               required
             />
 
@@ -137,6 +163,8 @@ export default function WhereToBuySection() {
               name="address"
               placeholder="तपाईंको ठेगाना"
               className="w-full border border-gray-300 rounded-lg p-3 text-black placeholder:text-gray-700"
+              value={formData.address}
+              onChange={handleChange}
               required
             />
 
@@ -145,24 +173,17 @@ export default function WhereToBuySection() {
               name="phone"
               placeholder="फोन नम्बर"
               className="w-full border border-gray-300 rounded-lg p-3 text-black placeholder:text-gray-700"
+              value={formData.phone}
+              onChange={handleChange}
               required
             />
-
-            {/* Hidden Config Inputs */}
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="धन्यवाद! तपाईंको विवरण प्राप्त भयो। हामी चाँडै सम्पर्क गर्नेछौं।"
-            />
-            <input type="hidden" name="_next" value="https://kangenwaternepal.com.np/?submitted=true" />
 
             <button
               type="submit"
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg"
+              disabled={isSubmitting}
             >
-              पेश गर्नुहोस्
+              {isSubmitting ? 'पठाउँदै...' : 'पेश गर्नुहोस्'}
             </button>
           </form>
         )}
