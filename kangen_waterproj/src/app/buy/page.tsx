@@ -96,7 +96,7 @@ export default function WhereToBuySection() {
   
          {/* Inquiry Form */}
         <form 
-         action="https://formsubmit.co/shrakwakagni@gmail.com" 
+         action="https://formsubmit.co/shrawakagni@gmail.com" 
          method="POST"
           className="mt-16 bg-white rounded-xl shadow-md p-6 max-w-xl mx-auto space-y-4"
           >
