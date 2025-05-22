@@ -26,19 +26,26 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h2 className="text-xl font-semibold text-blue-600 mb-4">Contact Us</h2>
-          <ul className="space-y-2">
-            <li className="flex items-center gap-2">
-              <Phone size={18} /> <span>+977-9857047817</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <Mail size={18} /> <span>kangenwaternepal7@gmail.com</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <Globe size={18} /> <span>www.kangenwaternepal.com.np</span>
-            </li>
-          </ul>
-        </div>
+  <h2 className="text-xl font-semibold text-blue-600 mb-4">Contact Us</h2>
+  <ul className="space-y-2">
+    <li className="flex items-start gap-2">
+      <Phone size={18} className="mt-1" />
+      <p className="text-base leading-relaxed">
+        <strong>Contact:</strong>{' '}
+        <a href="tel:+9779857071120" className="text-black hover:underline">9857071120</a> /{' '}
+        <a href="tel:+9779857047817" className="text-black hover:underline">9857047817</a> /{' '}
+        <a href="tel:+9779846893733" className="text-black hover:underline">9846893733</a>
+      </p>
+    </li>
+    <li className="flex items-center gap-2">
+      <Mail size={18} /> <a href="mailto:kangenwaternepal7@gmail.com" className="text-black hover:underline">kangenwaternepal7@gmail.com</a>
+    </li>
+    <li className="flex items-center gap-2">
+      <Globe size={18} /> <a href="https://www.kangenwaternepal.com.np" target="_blank" rel="noopener noreferrer" className="text-black hover:underline">www.kangenwaternepal.com.np</a>
+    </li>
+  </ul>
+</div>
+
 
         {/* Other Links & Socials */}
         <div>

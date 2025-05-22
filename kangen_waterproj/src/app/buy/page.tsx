@@ -43,29 +43,58 @@ export default function WhereToBuySection() {
         <h2 className="text-3xl md:text-4xl font-semibold text-blue-700 mb-4">Where to Buy? / कहाँ किन्न सकिन्छ?</h2>
         <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
           Contact our representatives or visit the office. Buy Kangen Water with full guidance. <br />
-          थप जानकारीको लागि हामीलाई सिधै सम्पर्क गर्नुहोस् वा अफिसमा आउनुहोस्।
+        </p>
+       
+{/* Location and Details */}
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start text-left">
+  {/* Left Section */}
+  <div className="space-y-6 w-full">
+    
+    {/* Green Banner */}
+    <div className="bg-green-600 text-white text-center font-semibold py-2 px-4 rounded-t-md w-full">
+      Visit Us For a Live Scientific Demonstration
+    </div>
+
+    {/* Centered Content Container */}
+    <div className="flex flex-col items-center text-center space-y-4">
+      {/* Title */}
+      <h2 className="text-3xl font-extrabold text-blue-900 tracking-wide uppercase">
+        Kangen Water Nepal
+      </h2>
+
+      {/* Address and Contact Info */}
+      <div className="text-gray-800 text-[17px] leading-relaxed space-y-3">
+        <p>
+          <strong>Address:</strong> Tilottama-4, Drivertole, Rupandehi
         </p>
 
-        {/* Location and Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start text-left">
-          {/* Left Section */}
-          <div className="space-y-10">
-            <h2 className="text-2xl font-bold text-gray-800">Kangen Water Nepal</h2>
-            <div className="space-y-4 text-gray-700">
-              <p className="text-lg">
-                <strong>Address:</strong> Tilottama-4, Drivertole, Rupandehi
-              </p>
-              <p className="text-lg">
-                <strong>Contact :</strong>{' '}
-                <a href="tel:+9779857071120" className="text-blue-600">9857071120</a> /{' '}
-                <a href="tel:+9779857047817" className="text-blue-600">9857047817</a>
-              </p>
-              <p className="text-lg">
-                <strong>Email:</strong>{' '}
-                <a href="mailto:kangenwaternepal7@gmail.com" className="text-blue-600">kangenwaternepal7@gmail.com</a>
-              </p>
-            </div>
-          </div>
+        <p className="flex justify-center items-center gap-2">
+          <img src="logos/whatsapp.png" alt="WhatsApp" className="w-5 h-5" />
+          <span>
+            <a href="tel:+9779857047817" className="text-black hover:underline">9857047817</a>,{' '}
+            <a href="tel:+9779857071120" className="text-black hover:underline">9857071120</a>,{' '}
+            <a href="tel:+9779846893733" className="text-black hover:underline">9846893733</a>
+          </span>
+        </p>
+
+        <p>
+          <strong>Email:</strong>{' '}
+          <a href="mailto:kangenwaternepal7@gmail.com" className="text-black hover:underline">
+            kangenwaternepal7@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>Website:</strong>{' '}
+          <a href="https://www.kangenwaternepal.com.np" target="_blank" className="text-black hover:underline">
+            www.kangenwaternepal.com.np
+          </a>
+        </p>
+      </div>
+    </div>
+</div>
+
+
 
           {/* Google Map */}
           <div className="rounded-xl overflow-hidden shadow-md">
@@ -79,57 +108,6 @@ export default function WhereToBuySection() {
           </div>
         </div>
 
-        {/* Contact Persons */}
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-blue-700 mb-6">Contact Persons / सम्पर्क व्यक्ति</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Prem Pokharel */}
-            <div className="bg-white shadow-md rounded-xl p-5 text-center">
-              <img src="/prem.png" alt="Prem Pokharel" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
-              <h4 className="text-lg font-semibold text-blue-600 mb-1">Prem Pokharel</h4>
-              <p className="text-sm text-gray-600 mb-3">Kangen Water Nepal Representative</p>
-              <div className="space-y-2">
-                <a
-                  href="tel:+9779857071120"
-                  className="inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full"
-                >
-                  Call Now
-                </a>
-                <a
-                  href="https://wa.me/9779857071120"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full"
-                >
-                  WhatsApp
-                </a>
-              </div>
-            </div>
-
-            {/* Suraj Adhikari */}
-            <div className="bg-white shadow-md rounded-xl p-5 text-center">
-              <img src="/surajdai.png" alt="Suraj Adhikari" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
-              <h4 className="text-lg font-semibold text-blue-600 mb-1">Suraj Adhikari</h4>
-              <p className="text-sm text-gray-600 mb-3">Kangen Water Nepal Representative</p>
-              <div className="space-y-2">
-                <a
-                  href="tel:+9779857047817"
-                  className="inline-block bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full"
-                >
-                  Call Now
-                </a>
-                <a
-                  href="https://wa.me/9779857047817"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full"
-                >
-                  WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Thank You Message */}
         {submitted && (

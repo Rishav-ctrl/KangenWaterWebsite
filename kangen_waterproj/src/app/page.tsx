@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
 
-const images = ['/sliders/slider1.png', '/sliders/slider2.png', '/sliders/slider3.png', '/sliders/slider4.png'];
+const images = [ '/sliders/slider4.png','/sliders/slider1.png', '/sliders/slider2.png', '/sliders/slider3.png', '/sliders/slider5.png'];
 
 const articles = [
   { title: 'Cristiano Ronaldo Drinks Kangen Water!', content: 'Cristiano Ronaldo जस्तो स्वास्थ्यप्रेमी व्यक्तिले Kangen Water K8 प्रयोग गर्छन् भन्ने देखाउन पाउँदा हामी खुसी छौं। स्वास्थ्य जीवनशैली चाहने सबैलाई प्रेरणा मिलोस्। आजै सम्पर्क गर्नुहोस् र आफ्नो Kangen प्राप्त गर्नुहोस्! 💧👍🏼', link :'https://www.facebook.com/watch/?v=656559738821284' },
@@ -131,7 +131,7 @@ export default function ProductsPage() {
       <section className="text-center mt-12 px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-2">Kangen Water Nepal</h1>
         <h2 className="text-xl md:text-3xl text-gray-800 font-medium mb-2">Change Your Water, Change Your Life!</h2>
-        <p className="text-base md:text-lg text-teal-600 italic">"Trusted by 6,500+ doctors | Certified in Japan | 5-in-1 Water System"</p>
+        <p className="text-base md:text-lg text-teal-600 italic">"Trusted by 6,500+ doctors | Certified in Japan | 7-in-1 Water System"</p>
       </section>
      {/* About Section */}
      <section className="py-16 px-6">

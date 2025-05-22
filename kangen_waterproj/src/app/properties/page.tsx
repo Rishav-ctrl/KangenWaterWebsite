@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import PhSlider from '@/components/PhSlider';
-import Antioxidant from '@/components/Antioxidant';
 import Link from 'next/link';
 
 export default function ScienceSection() {
@@ -76,24 +74,7 @@ export default function ScienceSection() {
           </div>
         </div>
 
-        {/* Sliders Section */}
-        <div className="mb-20">
-          <div className="mb-14">
-            <h2 className="text-3xl font-bold text-center text-blue-700 mb-2">pH Level अनुसार पानीको प्रभाव जान्नुहोस्!</h2>
-            <p className="text-center text-gray-700 mb-6">pH 2.5 देखि pH 11.0 सम्मका फरक-फरक पानीका गुणहरू।</p>
-            <div className="max-w-2xl mx-auto">
-              <PhSlider />
-            </div>
-          </div>
-
-          <div>
-            <h2 className="text-3xl font-bold text-center text-blue-700 mb-2">ORP Level ले के असर गर्छ?</h2>
-            <p className="text-center text-gray-700 mb-6">Higher Negative ORP = Higher Antioxidant Power = Better Protection!</p>
-            <div className="max-w-2xl mx-auto">
-              <Antioxidant />
-            </div>
-          </div>
-        </div>
+        
 
         {/* Comparison Table */}
         <div className="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-20">
