@@ -129,17 +129,26 @@ export default function ProductsPage() {
 
       {/* Hero Section */}
       <section className="text-center mt-12 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-2">Kangen Water Nepal</h1>
+        <h1 className="text-5xl font-extrabold text-blue-900 tracking-wide uppercase">Kangen Water Nepal</h1>
         <h2 className="text-xl md:text-3xl text-gray-800 font-medium mb-2">Change Your Water, Change Your Life!</h2>
-        <p className="text-base md:text-lg text-teal-600 italic">"Trusted by 6,500+ doctors | Certified in Japan | 7-in-1 Water System"</p>
+        <div className="mx-auto max-w-fit">
+        <p className="bg-green-600 text-white text-base md:text-lg text-teal-600 italic">"Trusted by 6,500+ doctors | Certified in Japan | 7-in-1 Water System"</p>
+        </div> 
       </section>
      {/* About Section */}
      <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto mb-12 flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">पानीको महत्व र कङ्गन मेसिन</h2>
+            <h2 className="text-2xl font-bold mb-4">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-tr-md inline-block">
+                पानी / Water
+              </span>
+            </h2>
+
             <p className="text-gray-700 text-lg leading-relaxed">
-              मानव जीवनमा पानीको अत्यन्तै महत्त्वपूर्ण भूमिका रहेको छ। एकातर्फ दूषित पानीले धेरै रोग निम्त्याउन सक्छ भने, अर्कोतर्फ शुद्ध र विशेष रूपमा प्रशोधित पानीले धेरै स्वास्थ्य समस्याहरूलाई निको पार्न मद्दत गर्दछ। लगभग ४४ वर्षअघि जापानी वैज्ञानिकहरूले कङ्गन मेसिन नामक एक उपकरणको आविष्कार गरे। यो उपकरणले साधारण पानीलाई पिउन योग्य, औषधीय गुण भएको र पूरक औषधिको रूपमा तयार पार्छ। यस्तो पानीको नियमित सेवनले लागिसकेका रोगहरूलाई नियन्त्रण गर्न र भविष्यमा लाग्न सक्ने रोगहरूबाट बचाउन मद्दत गर्दछ भन्ने विश्वास गरिन्छ।
+              पानी जीवन हो। मानव शरीर ६५-७५% पानीले बनेको हुन्छ। यो साधारण तर गहन सत्यले हाम्रो दैनिक जीवनमा सफा, स्वच्छ, स्वस्थ र जीवनदायी पानीको महत्वलाई जनाउँछ । स्वस्थ पानीको अभावले मानव शरीरमा धेरै रोग लाग्छ भने पर्याप्त स्वस्थ पानी पिउनाले धेरै रोगहरुबाट बच्न सकिन्छ । स्वस्थ पानी (Healthy Water) खोजीको क्रममा आजभन्दा ५० वर्ष अगाडी जापानीज डाक्टर र वैज्ञानिकहरूले संसारको धेरै ठाउँहरुको पानीलाई अनुसन्धान गर्दै जादा कतिपय स्थानको पानीमा Anti-Oxident, Alkaline, Micro-Cluster, Hydrogen Rich जस्ता विशेष Properties पत्ता लाग्यो । जुन विशेषतायुक्त पानी पिउनाले मानव स्वास्थ्यमा आमुल परिवर्तन ल्याउन सक्ने तथ्य पत्ता लाग्यो । सोही विशेष Properties युक्त पानी हरेक परिवार समक्ष पुऱ्याउनका लागि Kangen Water मेसिनको अविस्कार गरे। जुन मेसिन जापानको सरकारी हस्पिटलहरुमा २०औं वर्ष Clinical Trail (1974-1994) को क्रममा विरामीहरुको (Chronic Disease) दीर्घ रोगहरुमा समेत चमत्कारिक सुधार देखिएपछि ISO 13485 (Medical Grade Certified) भई Public सामु वितरणमा ल्याइयो | Kangen Water मा भएको विशेष 3 (Properties) गुणहरुले मानव शरीरलाई Hydrate, Detoxify निस्कृय कोषिकालाई सक्रिय गर्ने तथा प्राकृतिक र प्रभावकारी तरिकाले स्वस्थता प्रदान गर्दछ र Immune System लाई मजबुत गर्दछ। यो पानी पिउनाले मानिसलाई लागिसकेको रोग नियन्त्रण गर्न र भविष्यमा लाग्नसक्ने रोगहरुबाट बच्न मद्दत गर्दछ। यो पानी नियमित रुपमा पिउनाले शरीरलाई प्राकृतिक स्वस्थ अवस्थामा फर्काउन मद्दत गर्दछ । जापानीज भाषामा 
+              "कंगन (Kangen)" को अर्थ "पहिलेको अवस्थामा फर्कनु" हुन्छ । 
+              "Change Your Water, Change Your Life" यो शक्तिशाली slogan/कथन द्वारा Kangen Water ले दिने सारांशलाई प्रतिविम्वित गर्छ । Kangen Water को प्रयोगले तपाई केवल राम्रो Hydration को विकल्प मात्र रोज्नु हुदैन बरु तपाई आफू र आफ्नो परिवारको स्वास्थ्य अनि दीर्घायु प्रति प्राथमिकता दिने जीवनशैलीलाई अपनाउँदै हुनुहुन्छ ।
             </p>
           </div>
           <div className="w-full md:w-1/2 px-4">
