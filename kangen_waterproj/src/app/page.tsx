@@ -89,7 +89,7 @@ export default function ProductsPage() {
   const handleNext = () => setIndex((prev) => (prev + 1) % images.length);
 
   return (
-    <main className="bg-white min-h-screen font-sans relative">
+    <main className="bg-sky-100 min-h-screen font-sans relative">
       {/* Dynamic Image Banner with buttons */}
       <div className="relative w-full h-[250px] sm:h-[400px] overflow-hidden" {...handlers}>
 
@@ -181,25 +181,65 @@ export default function ProductsPage() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto mb-12 flex flex-wrap items-center">
-          <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">शरीरलाई हुने मुख्य फाइदाहरू र पानीका विशेषताहरू:</h2>
-            <p className="text-gray-700 text-lg leading-relaxed mb-2">
-              कङ्गन मेसिनले निम्न विशेषताहरू भएको पानी उत्पादन गर्दछ, जसले महत्त्वपूर्ण स्वास्थ्य लाभहरू प्रदान गर्ने विश्वास गरिन्छ:
-            </p>
-            <ol className="list-decimal pl-6 text-gray-700 leading-relaxed">
-              <li><span className="font-bold">एन्टि-अक्सिडेशन:</span> यसले अक्सिडेशन प्रक्रियालाई रोक्छ। अक्सिडेशन भनेको कोषहरू बिग्रने र बुढ्यौली लाग्ने प्रक्रिया हो। यस पानीको सेवनले कोषहरूलाई स्वस्थ राख्न र समग्र स्वास्थ्य तथा युवापनलाई बढावा दिन मद्दत गर्दछ।</li>
-              <li><span className="font-bold">अल्कालिनिटी:</span> यो प्रशोधित पानीले शरीरमा भएको अत्यधिक एसिडको मात्रालाई कम गरी क्षारीय वा प्राकृतिक सन्तुलन कायम राख्न मद्दत गर्दछ।</li>
-              <li><span className="font-bold">माइक्रो क्लस्टर:</span> मेसिनले पानीका अणुहरूलाई सानो समूहमा विभाजन गर्दछ, जसले गर्दा शरीरका कोषहरूमा सजिलै प्रवेश गर्न सक्छ। यसले कोषहरूमा अक्सिजनको मात्रा बढाउन, पोषक तत्वहरू पुर्‍याउन र अनावश्यक विषहरूलाई बाहिर निकाल्न मद्दत गर्दछ।</li>
-            </ol>
-            <p className="text-gray-700 text-lg leading-relaxed mt-4">
-              यस मेसिनबाट प्रशोधित पानी नियमित रूपमा पिउनाले शरीरलाई स्वस्थ अवस्थामा फर्काउन मद्दत गर्दछ। जापानी भाषामा "<span className="font-bold">कङ्गन</span>" को अर्थ "<span className="font-bold">पहिलाको अवस्थामा फर्कनु</span>" हुन्छ, र यो विश्वासमा आधारित छ कि यस पानीले शरीरलाई यसको प्राकृतिक, स्वस्थ अवस्थामा फर्काउन सहयोग गर्दछ।
+       <div className="max-w-7xl mx-auto mb-8 px-4">
+      {/* Section Heading */}
+      <div className="text-center mb-8">
+        <h2 className="inline-block bg-cyan-900 text-white text-2xl md:text-3xl font-bold px-6 py-2 rounded-xl">
+          Kangen Water® को प्रमुख विशेषताहरुः
+        </h2>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Left: Textual Content */}
+        <div className="flex-1 space-y-6">
+          {/* Feature 1 */}
+          <div>
+            <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded">
+              1. Anti-Oxidant (Anti-Aging)
+            </h3>
+            <p className="text-gray-800 leading-relaxed mt-2">
+             Anti अर्थात ठीक विपरित रोक्ने काम । Oxidation or Oxidizing अर्थात सड्ने गल्ने वा कुहिने प्रकृया हो । अझ भन्नुपर्दा रोग लाग्ने वा बुढो हुने (Fast Aging) प्रकृया नै Oxidation हो । यो सबै प्रकृयालाई रोक्ने वा छिटो हुन नदिने तत्व नै Anti-Oxidant हो । Kangen Water मा पर्याप्त मात्रामा Anti-Oxidant हुन्छ जसले हाम्रो शरीरलाई Oxidize हुनबाट बचाई स्वस्थ र जवान राख्न मद्दत गर्दछ।
             </p>
           </div>
-           <div className="w-full md:w-1/2 px-4">
-            <img src="/genimgs/kangenmean.png" alt="पानीका विशेषताहरू" className="rounded-lg shadow-md" />
+
+          {/* Feature 2 */}
+          <div>
+            <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded-t-md">
+              2. Alkaline क्षारीय
+            </h3>
+            <p className="text-gray-800 leading-relaxed mt-2">
+             Alkaline भनेको पानीमा भएको क्षारीय अवस्था हो जसको pH मान 7 भन्दा बढी हुन्छ। हामीले दैनिक जीवनमा पिउने पानी, खाइरहेको खाना Junk Food विभिन्न पेयपदार्थहरु अम्लीय (Acidic) प्रकृतिका हुन्छन् जसले हाम्रो शरीरलाई अम्लीय (Acidic) अवस्थामा लगिरहेको हुन्छ। बढ्‌दो अम्लिय (Acidic) अवस्थाले गर्दा हाम्रो शरीरमा विभिन्न रोगहरु निम्त्याउँछ । lonized Alkaline युक्त Kangen Water पिउनाले शरीरमा भएको अम्लिय पदार्थको प्रभावलाई कम गर्न सक्छ र शरीरमा pH Level लाई सन्तुलनमा राखी स्वस्थ रहन मद्दत गर्दछ ।
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div>
+            <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded-t-md">
+              3. Micro-Cluster शुक्ष्म अणु युक्त (पानीको पातलोपना)
+            </h3>
+            <p className="text-gray-800 leading-relaxed mt-2">
+              Micro-Cluster को अर्थ पानीमा भएको सुक्ष्म अणुहरुको गुच्छा अर्थात पानीको पातलोपना (Softness) लाई जनाउँछ । साधारण पानी हाम्रो शरीरलाई आवश्यकता अनुसारको पातलोपना नहुने भएकाले पानीको आपूर्ती कम (Dehydration) भइरहेको हुन्छ। हामीले खाईरहेको खानामा भएको Nutrition र आवश्यक Oxygen शरीरको प्रत्येक कोषिकासम्म पर्याप्त मात्रामा पुऱ्याउन सक्दैन। सोही कारणले शरीर Detoxify हुन सक्दैन तर Kangen Water पातलो (Soft) हुने भएकाले Body Hydrade गरी हाम्रो खानमा भएको विभिन्न किसिमको Nutrition, Vitamins, Minerals सुक्ष्म तत्वहरुलाई प्रत्येक कोषिकासम्म पुऱ्याउनुका साथै Oxygen पर्याप्त मात्रामा Cell, Blood हुँदै Brain सम्म प्रवाह गर्दछ । यसले शरीरमा रहेको Free Redicals र Toxins हरुलाई बाहिर निकाली मृत कोषिकाको ठाउँमा नयाँ कोषिका बन्न मद्दत गर्दछ।
+            </p>
           </div>
         </div>
+        {/* Right: Image */}
+        <div className="flex-1">
+          <Image
+            src="/genimgs/kangenmean.png"
+            alt="पानीका विशेषताहरु"
+            width={500}
+            height={600}
+            className="rounded-lg shadow-lg w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
+    {/* Footer Note */}
+          <div className="flex justify-center  mb-10">
+            <div className="bg-blue-900 text-white text-center font-semibold text-xl py-3 px-6 rounded-md max-w-fit">
+              Enagic Kangen Water Eletrolysis Technology “शुद्धता र स्वास्थ्यको नयाँ युग”
+            </div>
+          </div>
 
         <div className="max-w-4xl mx-auto mb-12 flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0 order-2 md:order-1">
