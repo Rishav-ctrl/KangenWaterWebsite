@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
+import { Span } from 'next/dist/trace';
 
 const images = [ '/sliders/slider4.png','/sliders/slider1.png', '/sliders/slider2.png', '/sliders/slider3.png', '/sliders/slider5.png'];
 
@@ -135,144 +136,185 @@ export default function ProductsPage() {
         <p className="bg-green-600 text-white text-base md:text-lg text-teal-600 italic">"Trusted by 6,500+ doctors | Certified in Japan | 7-in-1 Water System"</p>
         </div> 
       </section>
-     {/* About Section */}
-     <section className="py-16 px-6">
-        <div className="max-w-5xl mx-auto mb-12 flex flex-wrap items-center">
-          <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4">
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-tr-md inline-block">
-                पानी / Water
-              </span>
+      
+         {/* About Section */}
+          <section className="py-10 px-4 sm:px-6">
+            {/* पानी / Water Section */}
+            <div className="max-w-6xl mx-auto mb-16">
+              <div className="w-full mb-6">
+                <h2 className="text-2xl font-bold mb-4">
+                  <span className="bg-blue-600 text-white px-4 py-1 rounded-tr-md inline-block">
+                    पानी / Water
+                  </span>
+                </h2>
+                <p className="text-black text-lg leading-relaxed">
+                  पानी जीवन हो। मानव शरीर ६५-७५% पानीले बनेको हुन्छ। यो साधारण तर गहन सत्यले हाम्रो दैनिक जीवनमा सफा, स्वच्छ, स्वस्थ र जीवनदायी पानीको महत्वलाई जनाउँछ । स्वस्थ पानीको अभावले मानव शरीरमा धेरै रोग लाग्छ भने पर्याप्त स्वस्थ पानी पिउनाले धेरै रोगहरुबाट बच्न सकिन्छ । 
+                  <br /><br />
+                  स्वस्थ पानी (Healthy Water) खोजीको क्रममा आजभन्दा ५० वर्ष अगाडी जापानीज डाक्टर र वैज्ञानिकहरूले संसारको धेरै ठाउँहरुको पानीलाई अनुसन्धान गर्दै जादा कतिपय स्थानको पानीमा Anti-Oxident, Alkaline, Micro-Cluster, Hydrogen Rich जस्ता विशेष Properties पत्ता लाग्यो । 
+                  <br /><br />
+                  जुन विशेषतायुक्त पानी पिउनाले मानव स्वास्थ्यमा आमुल परिवर्तन ल्याउन सक्ने तथ्य पत्ता लाग्यो । सोही विशेष Properties युक्त पानी हरेक परिवार समक्ष पुऱ्याउनका लागि Kangen Water मेसिनको अविस्कार गरे। 
+                  <br /><br />
+                  जुन मेसिन जापानको सरकारी हस्पिटलहरुमा २०औं वर्ष Clinical Trail (1974-1994) को क्रममा विरामीहरुको (Chronic Disease) दीर्घ रोगहरुमा समेत चमत्कारिक सुधार देखिएपछि ISO 13485 (Medical Grade Certified) भई Public सामु वितरणमा ल्याइयो।
+                  <br /><br />
+                  Kangen Water मा भएको विशेष 3 (Properties) गुणहरुले मानव शरीरलाई Hydrate, Detoxify, निस्कृय कोषिकालाई सक्रिय गर्ने तथा प्राकृतिक र प्रभावकारी तरिकाले स्वस्थता प्रदान गर्दछ र Immune System लाई मजबुत गर्दछ। 
+                  <br /><br />
+                  यो पानी पिउनाले मानिसलाई लागिसकेको रोग नियन्त्रण गर्न र भविष्यमा लाग्नसक्ने रोगहरुबाट बच्न मद्दत गर्दछ। यो पानी नियमित रुपमा पिउनाले शरीरलाई प्राकृतिक स्वस्थ अवस्थामा फर्काउन मद्दत गर्दछ । 
+                  <br /><br />
+                  जापानीज भाषामा "कंगन (Kangen)" को अर्थ "पहिलेको अवस्थामा फर्कनु" हुन्छ । "Change Your Water, Change Your Life" यो शक्तिशाली slogan/कथन द्वारा Kangen Water ले दिने सारांशलाई प्रतिविम्वित गर्छ । 
+                  <br /><br />
+                  Kangen Water को प्रयोगले तपाई केवल राम्रो Hydration को विकल्प मात्र रोज्नु हुदैन बरु तपाई आफू र आफ्नो परिवारको स्वास्थ्य अनि दीर्घायु प्रति प्राथमिकता दिने जीवनशैलीलाई अपनाउँदै हुनुहुन्छ ।
+                </p>
+              </div>
+            </div>
+          </section>
+
+
+
+                {/* Section Heading */}
+                <div className="text-center mb-8">
+            <h2 className="inline-block bg-cyan-900 text-white text-2xl md:text-3xl font-bold px-6 py-2 rounded-xl">
+              Kangen Water® को प्रमुख विशेषताहरु:
             </h2>
-
-            <p className="text-gray-700 text-lg leading-relaxed">
-              पानी जीवन हो। मानव शरीर ६५-७५% पानीले बनेको हुन्छ। यो साधारण तर गहन सत्यले हाम्रो दैनिक जीवनमा सफा, स्वच्छ, स्वस्थ र जीवनदायी पानीको महत्वलाई जनाउँछ । स्वस्थ पानीको अभावले मानव शरीरमा धेरै रोग लाग्छ भने पर्याप्त स्वस्थ पानी पिउनाले धेरै रोगहरुबाट बच्न सकिन्छ । स्वस्थ पानी (Healthy Water) खोजीको क्रममा आजभन्दा ५० वर्ष अगाडी जापानीज डाक्टर र वैज्ञानिकहरूले संसारको धेरै ठाउँहरुको पानीलाई अनुसन्धान गर्दै जादा कतिपय स्थानको पानीमा Anti-Oxident, Alkaline, Micro-Cluster, Hydrogen Rich जस्ता विशेष Properties पत्ता लाग्यो । जुन विशेषतायुक्त पानी पिउनाले मानव स्वास्थ्यमा आमुल परिवर्तन ल्याउन सक्ने तथ्य पत्ता लाग्यो । सोही विशेष Properties युक्त पानी हरेक परिवार समक्ष पुऱ्याउनका लागि Kangen Water मेसिनको अविस्कार गरे। जुन मेसिन जापानको सरकारी हस्पिटलहरुमा २०औं वर्ष Clinical Trail (1974-1994) को क्रममा विरामीहरुको (Chronic Disease) दीर्घ रोगहरुमा समेत चमत्कारिक सुधार देखिएपछि ISO 13485 (Medical Grade Certified) भई Public सामु वितरणमा ल्याइयो | Kangen Water मा भएको विशेष 3 (Properties) गुणहरुले मानव शरीरलाई Hydrate, Detoxify निस्कृय कोषिकालाई सक्रिय गर्ने तथा प्राकृतिक र प्रभावकारी तरिकाले स्वस्थता प्रदान गर्दछ र Immune System लाई मजबुत गर्दछ। यो पानी पिउनाले मानिसलाई लागिसकेको रोग नियन्त्रण गर्न र भविष्यमा लाग्नसक्ने रोगहरुबाट बच्न मद्दत गर्दछ। यो पानी नियमित रुपमा पिउनाले शरीरलाई प्राकृतिक स्वस्थ अवस्थामा फर्काउन मद्दत गर्दछ । जापानीज भाषामा 
-              "कंगन (Kangen)" को अर्थ "पहिलेको अवस्थामा फर्कनु" हुन्छ । 
-              "Change Your Water, Change Your Life" यो शक्तिशाली slogan/कथन द्वारा Kangen Water ले दिने सारांशलाई प्रतिविम्वित गर्छ । Kangen Water को प्रयोगले तपाई केवल राम्रो Hydration को विकल्प मात्र रोज्नु हुदैन बरु तपाई आफू र आफ्नो परिवारको स्वास्थ्य अनि दीर्घायु प्रति प्राथमिकता दिने जीवनशैलीलाई अपनाउँदै हुनुहुन्छ ।
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 px-4">
-            <img src="/genimgs/image2.png" alt="कङ्गन मेसिन" className="rounded-lg shadow-md" />
-          </div>
-        </div>
-
-        <div className="max-w-4xl mx-auto mb-12 flex flex-wrap items-center">
-          <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0 order-2 md:order-1">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">कङ्गन मेसिनका विशेषताहरू:</h2>
-            <p className="text-gray-700 text-lg leading-relaxed mb-2">
-              यो उन्नत मेसिनमा ७ देखि १२ वटा प्लेटहरू जडान गरिएका छन्, जसमा प्लाटिनम कोडेड, टाइटानियम प्लेट र इलेक्ट्रोलाइटिक प्लेटहरू प्रमुख छन्। यसको प्रभावकारिता र सुरक्षा विभिन्न प्रमाणहरूद्वारा समर्थित छ:
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 leading-relaxed">
-              <li><span className="font-bold">चिकित्सकीय प्रमाणीकरण:</span> ६५०० जना डाक्टरहरूको समूहले प्रयोगशाला परीक्षण गरी यसको पुष्टि गरेको बताइएको छ।</li>
-              <li><span className="font-bold">सरकारी मान्यता:</span> जापानको स्वास्थ्य, श्रम तथा कल्याण मन्त्रालयबाट प्रमाणित गरिएको उपकरण।</li>
-              <li><span className="font-bold">अन्तर्राष्ट्रिय मापदण्ड:</span> यसले आईएसओ १४००१, ९००१ र १३४८५ जस्ता गुणस्तर प्रमाणपत्रहरू प्राप्त गरेको छ।</li>
-              <li><span className="font-bold">गुणस्तर सुनिश्चितता:</span> वाटर क्वालिटी एसोसिएसन (USA) बाट गोल्ड सील अवार्डद्वारा सम्मानित।</li>
-              <li><span className="font-bold">एकीकृत प्रविधि:</span> यसमा चुम्बकीय शक्ति जडान गरिएको हुन्छ।</li>
-              <li><span className="font-bold">वारेन्टी र आयु:</span> यो ५ वर्षको वारेन्टीको साथ आउँछ र लगभग १८-२० वर्षसम्म प्रयोग गर्न सकिन्छ।</li>
-              <li><span className="font-bold">सञ्चालन:</span> यसलाई विद्युत आपूर्ति चाहिन्छ र यो कम्प्याक्ट तथा प्रयोग गर्न सजिलो छ।</li>
-              <li><span className="font-bold">औद्योगिक उत्पादन:</span> यो औद्योगिक मापदण्ड अनुसार उत्पादन गरिन्छ।</li>
-              <li><span className="font-bold">बहुउपयोगी उत्पादन:</span> यसले सात प्रकारका फरक-फरक गुणस्तरयुक्त पानी उत्पादन गर्न सक्छ।</li>
-              <li><span className="font-bold">प्रयोगकर्ता मैत्री इन्टरफेस:</span> यसमा एलसीडी स्क्रिन र आवाज निर्देशन प्रणाली जडान गरिएको छ।</li>
-              <li><span className="font-bold">निर्देशिका:</span> विस्तृत प्रयोगकर्ता पुस्तिका यसका साथ उपलब्ध छ।</li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/2 px-4 order-1 md:order-2">
-            <img src="/macines/machine1.png" alt="कङ्गन मेसिनका विशेषताहरू" className="rounded-lg shadow-md" />
-          </div>
-        </div>
-
-       <div className="max-w-7xl mx-auto mb-8 px-4">
-      {/* Section Heading */}
-      <div className="text-center mb-8">
-        <h2 className="inline-block bg-cyan-900 text-white text-2xl md:text-3xl font-bold px-6 py-2 rounded-xl">
-          Kangen Water® को प्रमुख विशेषताहरुः
-        </h2>
-      </div>
-
-      <div className="flex flex-col lg:flex-row gap-8">
-        {/* Left: Textual Content */}
-        <div className="flex-1 space-y-6">
-          {/* Feature 1 */}
-          <div>
-            <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded">
-              1. Anti-Oxidant (Anti-Aging)
-            </h3>
-            <p className="text-gray-800 leading-relaxed mt-2">
-             Anti अर्थात ठीक विपरित रोक्ने काम । Oxidation or Oxidizing अर्थात सड्ने गल्ने वा कुहिने प्रकृया हो । अझ भन्नुपर्दा रोग लाग्ने वा बुढो हुने (Fast Aging) प्रकृया नै Oxidation हो । यो सबै प्रकृयालाई रोक्ने वा छिटो हुन नदिने तत्व नै Anti-Oxidant हो । Kangen Water मा पर्याप्त मात्रामा Anti-Oxidant हुन्छ जसले हाम्रो शरीरलाई Oxidize हुनबाट बचाई स्वस्थ र जवान राख्न मद्दत गर्दछ।
-            </p>
           </div>
 
-          {/* Feature 2 */}
-          <div>
-            <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded-t-md">
-              2. Alkaline क्षारीय
-            </h3>
-            <p className="text-gray-800 leading-relaxed mt-2">
-             Alkaline भनेको पानीमा भएको क्षारीय अवस्था हो जसको pH मान 7 भन्दा बढी हुन्छ। हामीले दैनिक जीवनमा पिउने पानी, खाइरहेको खाना Junk Food विभिन्न पेयपदार्थहरु अम्लीय (Acidic) प्रकृतिका हुन्छन् जसले हाम्रो शरीरलाई अम्लीय (Acidic) अवस्थामा लगिरहेको हुन्छ। बढ्‌दो अम्लिय (Acidic) अवस्थाले गर्दा हाम्रो शरीरमा विभिन्न रोगहरु निम्त्याउँछ । lonized Alkaline युक्त Kangen Water पिउनाले शरीरमा भएको अम्लिय पदार्थको प्रभावलाई कम गर्न सक्छ र शरीरमा pH Level लाई सन्तुलनमा राखी स्वस्थ रहन मद्दत गर्दछ ।
-            </p>
-          </div>
+          <div className="space-y-12 max-w-6xl mx-auto mb-16">
+            {/* Feature 1 */}
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+              <div className="flex-1">
+                <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded">
+                  1. Anti-Oxidant (Anti-Aging)
+                </h3>
+                <p className="text-gray-800 leading-relaxed mt-2">
+                  Anti अर्थात ठीक विपरित रोक्ने काम । Oxidation or Oxidizing अर्थात सड्ने गल्ने वा कुहिने प्रकृया हो । अझ भन्नुपर्दा रोग लाग्ने वा बुढो हुने (Fast Aging) प्रकृया नै Oxidation हो । यो सबै प्रकृयालाई रोक्ने वा छिटो हुन नदिने तत्व नै Anti-Oxidant हो । Kangen Water मा पर्याप्त मात्रामा Anti-Oxidant हुन्छ जसले हाम्रो शरीरलाई Oxidize हुनबाट बचाई स्वस्थ र जवान राख्न मद्दत गर्दछ।
+                </p>
+              </div>
+              <div className="flex-1">
+                <Image
+                  src="/genimgs/ORPpng.png"
+                  alt="Anti-Oxidant ORP"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-md w-full h-auto"
+                />
+              </div>
+            </div>
 
-          {/* Feature 3 */}
-          <div>
-            <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded-t-md">
-              3. Micro-Cluster शुक्ष्म अणु युक्त (पानीको पातलोपना)
-            </h3>
-            <p className="text-gray-800 leading-relaxed mt-2">
-              Micro-Cluster को अर्थ पानीमा भएको सुक्ष्म अणुहरुको गुच्छा अर्थात पानीको पातलोपना (Softness) लाई जनाउँछ । साधारण पानी हाम्रो शरीरलाई आवश्यकता अनुसारको पातलोपना नहुने भएकाले पानीको आपूर्ती कम (Dehydration) भइरहेको हुन्छ। हामीले खाईरहेको खानामा भएको Nutrition र आवश्यक Oxygen शरीरको प्रत्येक कोषिकासम्म पर्याप्त मात्रामा पुऱ्याउन सक्दैन। सोही कारणले शरीर Detoxify हुन सक्दैन तर Kangen Water पातलो (Soft) हुने भएकाले Body Hydrade गरी हाम्रो खानमा भएको विभिन्न किसिमको Nutrition, Vitamins, Minerals सुक्ष्म तत्वहरुलाई प्रत्येक कोषिकासम्म पुऱ्याउनुका साथै Oxygen पर्याप्त मात्रामा Cell, Blood हुँदै Brain सम्म प्रवाह गर्दछ । यसले शरीरमा रहेको Free Redicals र Toxins हरुलाई बाहिर निकाली मृत कोषिकाको ठाउँमा नयाँ कोषिका बन्न मद्दत गर्दछ।
-            </p>
-          </div>
-        </div>
-        {/* Right: Image */}
-        <div className="flex-1">
-          <Image
-            src="/genimgs/kangenmean.png"
-            alt="पानीका विशेषताहरु"
-            width={500}
-            height={600}
-            className="rounded-lg shadow-lg w-full h-auto"
-          />
-        </div>
-      </div>
-    </div>
-    {/* Footer Note */}
-          <div className="flex justify-center  mb-10">
-            <div className="bg-blue-900 text-white text-center font-semibold text-xl py-3 px-6 rounded-md max-w-fit">
-              Enagic Kangen Water Eletrolysis Technology “शुद्धता र स्वास्थ्यको नयाँ युग”
+            {/* Feature 2 */}
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+              <div className="flex-1">
+                <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded">
+                  2. Alkaline क्षारीय
+                </h3>
+                <p className="text-gray-800 leading-relaxed mt-2">
+                  Alkaline भनेको पानीमा भएको क्षारीय अवस्था हो जसको pH मान 7 भन्दा बढी हुन्छ। हामीले दैनिक जीवनमा पिउने पानी, खाइरहेको खाना Junk Food विभिन्न पेयपदार्थहरु अम्लीय (Acidic) प्रकृतिका हुन्छन् जसले हाम्रो शरीरलाई अम्लीय (Acidic) अवस्थामा लगिरहेको हुन्छ। बढ्‌दो अम्लिय (Acidic) अवस्थाले गर्दा हाम्रो शरीरमा विभिन्न रोगहरु निम्त्याउँछ । lonized Alkaline युक्त Kangen Water पिउनाले शरीरमा भएको अम्लिय पदार्थको प्रभावलाई कम गर्न सक्छ र शरीरमा pH Level लाई सन्तुलनमा राखी स्वस्थ रहन मद्दत गर्दछ ।
+                </p>
+              </div>
+              <div className="flex-1">
+                <Image
+                  src="/genimgs/PHpng.png"
+                  alt="Alkaline pH"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-md w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="flex flex-col lg:flex-row items-center gap-6">
+              <div className="flex-1">
+                <h3 className="bg-blue-900 text-white font-bold text-lg px-4 py-2 rounded">
+                  3. Micro-Cluster शुक्ष्म अणु युक्त (पानीको पातलोपना)
+                </h3>
+                <p className="text-gray-800 leading-relaxed mt-2">
+                  Micro-Cluster को अर्थ पानीमा भएको सुक्ष्म अणुहरुको गुच्छा अर्थात पानीको पातलोपना (Softness) लाई जनाउँछ । साधारण पानी हाम्रो शरीरलाई आवश्यकता अनुसारको पातलोपना नहुने भएकाले पानीको आपूर्ती कम (Dehydration) भइरहेको हुन्छ। हामीले खाईरहेको खानामा भएको Nutrition र आवश्यक Oxygen शरीरको प्रत्येक कोषिकासम्म पर्याप्त मात्रामा पुऱ्याउन सक्दैन। सोही कारणले शरीर Detoxify हुन सक्दैन तर Kangen Water पातलो (Soft) हुने भएकाले Body Hydrade गरी हाम्रो खानमा भएको विभिन्न किसिमको Nutrition, Vitamins, Minerals सुक्ष्म तत्वहरुलाई प्रत्येक कोषिकासम्म पुऱ्याउनुका साथै Oxygen पर्याप्त मात्रामा Cell, Blood हुँदै Brain सम्म प्रवाह गर्दछ । यसले शरीरमा रहेको Free Redicals र Toxins हरुलाई बाहिर निकाली मृत कोषिकाको ठाउँमा नयाँ कोषिका बन्न मद्दत गर्दछ।
+                </p>
+              </div>
+              <div className="flex-1">
+                <Image
+                  src="/genimgs/micclusterpng.png"
+                  alt="Micro-Cluster"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-md w-full h-auto"
+                />
+              </div>
             </div>
           </div>
 
-        <div className="max-w-4xl mx-auto mb-12 flex flex-wrap items-center">
+
+          {/* Footer Note */}
+          <div className="flex justify-center my-10">
+            <div className="bg-blue-900 text-white text-center font-semibold text-xl py-3 px-6 rounded-md max-w-fit">
+              Enagic Kangen Water Electrolysis Technology “शुद्धता र स्वास्थ्यको नयाँ युग”
+            </div>
+          </div>
+
+
+        <div className="max-w-6xl mx-auto mb-12 flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-4 mb-4 md:mb-0 order-2 md:order-1">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">कङ्गन पानी पिउनाले हुने सम्भावित फाइदाहरू:</h2>
+        
+            <h2 className="text-2xl font-bold mb-4">
+                  <span className="bg-blue-600 text-white px-4 py-1 rounded-tr-md inline-block">
+                    Restructured lonized Alkaline Kangen Water® पिउनुको फाइदाहरूः
+                  </span>
+                  </h2>
             <ul className="list-disc pl-6 text-gray-700 leading-relaxed">
-              <li>शरीरको आन्तरिक सफाई र नियमित दिसा।</li>
-              <li>मजबुत प्रतिरक्षा प्रणाली।</li>
-              <li>निष्क्रिय कोषहरूको सक्रियता।</li>
-              <li>मिर्गौला समस्या भएकाहरूलाई फाइदाजनक।</li>
-              <li>पाचन प्रणालीलाई बलियो बनाउन मद्दत।</li>
-              <li>शरीरको सन्तुलन कायम राख्ने र एसिडजन्य विकारहरू हटाउने।</li>
-              <li>कलेजोको स्वास्थ्यमा सुधार।</li>
-              <li>ग्यास्ट्रिक र पेट सम्बन्धी समस्याहरूमा राहत।</li>
-              <li>सुक्खा मुख र यूरिक एसिडको समस्यामा सुधार।</li>
-              <li>पेटलाई स्वस्थ राख्ने।</li>
-              <li>दीर्घ रोगहरूको गम्भीरता कम गर्ने सम्भावना।</li>
-              <li>छातीको जलन, थकान, थाइराइड, क्यान्सर, कब्जियत, मुटु रोग र पक्षघात जस्ता समस्याहरूमा सुधार।</li>
-              <li>शरीरमा भिटामिन र खनिजहरूको मात्रा बढाउने।</li>
-              <li>शरीर भित्र जमेको एसिड जस्ता फोहोरहरू बाहिर निकाल्ने।</li>
-              <li>कोलेस्ट्रोलको मात्रा घटाउने।</li>
-              <li>घाउहरू चाँडै निको पार्ने।</li>
-              <li>शरीरका विभिन्न भागहरूमा अक्सिजनको मात्रा पुर्‍याउने।</li>
-              <li>पोषक तत्वहरूको राम्रो प्रसारण।</li>
-              <li>श्वासप्रश्वास समस्या भएकाहरूलाई नियमित बनाउन मद्दत।</li>
-              <li>कलिलै उमेरमा कपाल फुल्न नदिने।</li>
-              <li>चाउरीपना जस्ता समस्याहरूबाट छुटकारा पाउन मद्दत।</li>
-              <li>उच्च रक्तचाप, मधुमेह र इन्सुलिनको स्तरलाई सामान्य अवस्थामा फर्काउन मद्दत।</li>
+                <li>प्रतिरक्षा प्रणाली (Immune System) बलियो बनाउँछ ।</li>
+                <li>माइग्रेन, थाइराईड, युरिक एसिड, बाथ, सुगर, प्रेसर जस्ता दीर्घ रोग नियन्त्रण गर्न मद्दत गर्दछ ।</li>
+                <li>क्यान्सर जस्तो प्राणघातक रोगबाट बचाउन मद्दत गर्दछ ।</li>
+                <li>पाचन प्रणालीमा सुधार गरी ग्यास्ट्रीक, अल्सर, कन्र्नस्टपेसन जस्ता समस्यालाई कम गर्न मद्दत गर्दछ ।</li>
+                <li>अनावश्यक मोटोपना, फ्याटीलिभर, कोलेस्ट्रोल जस्ता समस्यालाई नियन्त्रण गर्न मद्दत गर्दछ ।</li>
+                <li>पत्थरी हुन नदिन, भएको पत्थरी हटाउन र किड्नीलाई बचाई राख्न मद्दत गर्दछ ।</li>
+                <li>अक्सिजनको मात्रा शरीरको विभिन्न भागमा पुऱ्याउनुका साथै पौष्टिक तत्वलाई प्रसारण गर्दछ ।</li>
+                <li>मस्तिष्क सम्बन्धी समस्या सुधार गरी स्मरण शक्ति बढाउन मद्दत गर्दछ ।</li>
+                <li>छाला सम्बन्धी विभिन्न समस्याहरुका साथै Psoriasis, Eczema जस्तो दीर्घ रोगलाई समेत कम गर्न मद्दत गर्दछ ।</li>
+                <li>गर्भवती महिलाले यो पानी पिउनाले आमाको स्वास्थ्य सुधार गरी स्वस्थ बच्चा जन्मिन मद्दत गर्दछ ।</li>
+                <li>शरीरमा भिटामिन र मिनरलस्‌को मात्रालाई सन्तुलन राख्न मद्दत गर्दछ ।</li>
+                <li>श्वास प्रश्वास सम्बन्धी समस्यालाई सहज बनाउन मद्दत गर्दछ ।</li>
+                <li>मुटु सम्बन्धी समस्यालाई कम गर्न मद्दत गर्दछ ।</li>
+                <li>कमजोरी थकानलाई कम गरी Energy Level Maintain राख्न मद्दत गर्दछ।</li>
             </ul>
           </div>
            <div className="w-full md:w-1/2 px-4 order-1 md:order-2">
             <img src="/genimgs/micclus.png" alt="कङ्गन पानीका फाइदाहरू" className="rounded-lg shadow-md" />
           </div>
         </div>
+
+         {/* कङ्गन मेसिनका विशेषताहरू Section */}
+            <div className="mb-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+              <div className="w-full md:w-1/2">
+              <h2 className="text-2xl font-bold mb-4">
+                <span className="bg-blue-600 text-white px-4 py-1 rounded-tr-md inline-block mb-2">
+                  Kangen Water® lonizer का विशेषताहरू:
+              </span>
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                  यो उन्नत मेसिनमा ७ देखि १२ वटा प्लेटहरू जडान गरिएका छन्, जसमा प्लाटिनम कोडेड, टाइटानियम प्लेट र इलेक्ट्रोलाइटिक प्लेटहरू प्रमुख छन्। यसको प्रभावकारिता र सुरक्षा विभिन्न प्रमाणहरूद्वारा समर्थित छ:
+                </p>
+                <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+            <li>यो मेसिनमा ४-१२ वटा Platinum Coated Titanium (Medical Grade) प्लेटहरु हुन्छन् ।</li>
+            <li>यो मेसिन जापानको 6500 M.D. डाक्टरहरुद्वारा Approved गरिएको हो ।</li>
+            <li>यो मेसिन विश्वकै एक मात्र ISO13485 (Medical Grade) प्रमाणित उपकरण हो।</li>
+            <li>यो मेसिन 14001, 9001 प्रमाणित उपकरण हो।</li>
+            <li>Water Quality Association अमेरिकाबाट विश्वकै एक मात्र Gold Standard Award सम्मानित उपकरण हो ।</li>
+            <li>जापान सरकार स्वास्थ्य तथा श्रम मन्त्रालयबाट प्रमाणित उपकरण हो ।</li>
+            <li>पानीमा भएको Chlorine हटाउन सक्ने विशेष Filteration System युक्त एक मात्र मेसिन हो ।</li>
+            <li>यो मेसिनको ३-५ वर्षको International Warranty हुन्छ ।</li>
+            <li>यो मेसिन न्यूनतम १५-२५ वर्षसम्म टिकाउ हुन्छ ।</li>
+            <li>यो मेसिनबाट ७ प्रकारको फरक-फरक गुण भएको पानी निकाल्न सकिन्छ ।</li>
+            <li>यो मेसिनलाई Rolls Royce of Water lonizer पनि भनिन्छ ।</li>
+        </ul>
+              </div>
+
+              <div className="w-full md:w-1/2 mb-4">
+                <img
+                  src="/macines/machine1.png"
+                  alt="कङ्गन मेसिनका विशेषताहरू"
+                  className="rounded-lg shadow-md w-full object-cover max-h-[500px]"
+                />
+              </div>
+            </div>
 
         <div className="max-w-4xl mx-auto mb-12">
           <h2 className="text-xl font-bold text-gray-800 mb-4">कङ्गन पानीका विभिन्न प्रकार र तिनीहरूको प्रयोग:</h2>
@@ -327,7 +369,8 @@ export default function ProductsPage() {
             Know More
           </Link>
         </div>
-      </section>
+      
+  );
 
       {/* Info Section */}
       <section className="px-6 py-16 bg-gray-50">
