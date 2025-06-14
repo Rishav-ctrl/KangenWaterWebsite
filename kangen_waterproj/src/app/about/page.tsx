@@ -23,34 +23,102 @@
   return (
     <>
       {/* About Kangen Section */}
-      <section id="about" className="py-24 md:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water?</h2>
-            <p className="text-lg md:text-xl text-gray-700 mb-6">
-              Kangen पानी भनेको ionized alkaline पानी हो जुन जापानमा बनेको विशेष machine बाट तयार हुन्छ। यो पानीले शरीरबाट <strong>acid र toxins हटाउँछ</strong> र शरीरलाई <strong>hydro balance</strong> मा राख्छ।
-            </p>
-            <p className="text-md md:text-lg text-gray-600">
-              Electrolysis process मार्फत बनाइने यो पानीलाई जापानको स्वास्थ्य मन्त्रालयले <strong>medical device</strong> को रूपमा मान्यता दिएको छ। ६,५०० भन्दा धेरै doctors ले recommend गरेको यो machine लाई “<em>Rolls Royce of Water Ionizers</em>” पनि भनिन्छ।
-            </p>
-            <p className="text-md md:text-lg text-gray-600 mt-4">
-              नेपालीमा भन्नुपर्दा, "यो पानी त पिउँदा नै फरक लाग्छ — हल्का, मिठो अनि refreshing!" 💧
-            </p>
-          </div>
+<section id="about" className="py-24 md:py-9 bg-white">
+  <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water?</h2>
+      <p className="text-lg md:text-xl text-gray-700 mb-6">
+        Kangen Water® is delicious water created from
+        Enagic® innovative water technology, contains a lot
+        of minerals and Active Hydrogen (OH-), Oxidation
+        Reduction Potential (ORP) reach -250mv and more.
+        Since Kangen Water® is obtained by electrolysis, it
+        is also called electrolyzed water or ionized alkaline
+        water.
+      </p>
+    </div>
 
-          <div className="text-center">
-            <Image
-              src="/macines/machine1.png"
-              alt="Kangen Machine"
-              width={350}
-              height={450}
-              className="rounded-full shadow-2xl border-4 border-blue-100 mx-auto"
-              style={{ objectFit: 'contain' }}
-            />
-          </div>
-        </div>
+    <div className="text-center">
+      <Image
+        src="/macines/whatimg.png"
+        alt="Kangen Machine"
+        width={550}
+        height={450}
+        className="shadow-2xl mx-auto"
+        style={{ objectFit: 'contain' }}
+      />
+    </div>
+  </div>
+</section>
 
-      </section>
+{/* Why Kangen Section - Image on Left (Flipped) */}
+<section className="py-24 md:py-9 bg-white">
+  <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
+    {/* Image on Left for this section */}
+    <div className="text-center order-1 md:order-none">
+      <Image
+        src="/macines/machine1.png"
+        alt="Kangen Machine"
+        width={350}
+        height={450}
+        className="rounded-full shadow-2xl border-4 border-blue-100 mx-auto"
+        style={{ objectFit: 'contain' }}
+      />
+    </div>
+
+    <div>
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">Why Kangen Water®?</h2>
+      <p className="text-lg md:text-xl text-gray-700 mb-6">
+        Water is of major importance to all living things, up
+        to 70% of the human adult body is water. Water can
+        improve metabolism, enhance immunity, improve
+        digest system, flushing out waste. Therefore, it is
+        especially important to drink more water and drink
+        good water. <br />
+        In today's society, environmental pollution, poor
+        diet and living habits, lack of sleep, stress and other
+        factors will cause the body to produce a lot of free
+        radicals. Excessive free radicals in the body will
+        accelerate the body's oxidation and decay, making
+        the body vulnerable to disease invasion.<br />
+        Kangen Water® is water produced after electrolysis, which can effectively remove excessive free radicals in the body,
+        prevent cells from being destroyed and oxidized, and improve physical fitness. In addition, Kangen Water® is alkaline, which
+        can neutralize acid poisoning in the body, and the electrolytic reduced water contains ionized minerals, which is easily
+        absorbed by the human body. In Japan, long-term drinking is recognized to have a good effect on gastrointestinal function,
+        promote metabolism, detoxify and protect the liver, and improve immunity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section className="py-24 md:py-9 bg-white">
+  <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water?</h2>
+      <p className="text-lg md:text-xl text-gray-700 mb-6">
+        Kangen Water® is delicious water created from
+        Enagic® innovative water technology, contains a lot
+        of minerals and Active Hydrogen (OH-), Oxidation
+        Reduction Potential (ORP) reach -250mv and more.
+        Since Kangen Water® is obtained by electrolysis, it
+        is also called electrolyzed water or ionized alkaline
+        water.
+      </p>
+    </div>
+
+    <div className="text-center">
+      <Image
+        src="/macines/machine1.png"
+        alt="Kangen Machine"
+        width={350}
+        height={450}
+        className="rounded-full shadow-2xl border-4 border-blue-100 mx-auto"
+        style={{ objectFit: 'contain' }}
+      />
+    </div>
+  </div>
+</section>
+    
 
       {/* Certifications Section */}
       <section className="py-24 md:py-32 bg-blue-50">
