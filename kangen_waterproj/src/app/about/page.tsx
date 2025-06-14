@@ -57,11 +57,11 @@
     {/* Image on Left for this section */}
     <div className="text-center order-1 md:order-none">
       <Image
-        src="/macines/machine1.png"
+        src="/macines/whyimg.png"
         alt="Kangen Machine"
-        width={350}
+        width={550}
         height={450}
-        className="rounded-full shadow-2xl border-4 border-blue-100 mx-auto"
+        className="shadow-2xl mx-auto"
         style={{ objectFit: 'contain' }}
       />
     </div>
@@ -94,25 +94,24 @@
 <section className="py-24 md:py-9 bg-white">
   <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
-      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water?</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">LeveLuk® Series Structure</h2>
       <p className="text-lg md:text-xl text-gray-700 mb-6">
-        Kangen Water® is delicious water created from
-        Enagic® innovative water technology, contains a lot
-        of minerals and Active Hydrogen (OH-), Oxidation
-        Reduction Potential (ORP) reach -250mv and more.
-        Since Kangen Water® is obtained by electrolysis, it
-        is also called electrolyzed water or ionized alkaline
-        water.
+      According to different models, the electrolysis
+      chamber has 4,7,8,12 electrode plates, made of
+      platinum-coated Titanium plates, Provide stable
+      ORP + 1300 mV to - 800 mV levels (depends on
+      water quality). Kangen Water® contains a lot of
+      active hydrogen (OH-) and - ORP.
       </p>
     </div>
 
     <div className="text-center">
       <Image
-        src="/macines/machine1.png"
+        src="/macines/levluk.png"
         alt="Kangen Machine"
-        width={350}
+       width={550}
         height={450}
-        className="rounded-full shadow-2xl border-4 border-blue-100 mx-auto"
+        className="shadow-2xl mx-auto"
         style={{ objectFit: 'contain' }}
       />
     </div>

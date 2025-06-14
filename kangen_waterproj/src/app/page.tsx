@@ -7,7 +7,7 @@ import { useSwipeable } from 'react-swipeable';
 import { Span } from 'next/dist/trace';
 import PHUsageSection from './/components/PHUsageSection';
 
-const images = [ '/sliders/slider4.png','/sliders/slider1.png', '/sliders/slider2.png', '/sliders/slider3.png', '/sliders/slider5.png'];
+const images = [ '/sliders/slider4.png','/sliders/slider1.png', '/sliders/slider3.png', '/sliders/slider5.png'];
 
 const articles = [
   { title: 'Cristiano Ronaldo Drinks Kangen Water!', content: 'Cristiano Ronaldo जस्तो स्वास्थ्यप्रेमी व्यक्तिले Kangen Water K8 प्रयोग गर्छन् भन्ने देखाउन पाउँदा हामी खुसी छौं। स्वास्थ्य जीवनशैली चाहने सबैलाई प्रेरणा मिलोस्। आजै सम्पर्क गर्नुहोस् र आफ्नो Kangen प्राप्त गर्नुहोस्! 💧👍🏼', link :'https://www.facebook.com/watch/?v=656559738821284' },
@@ -141,8 +141,10 @@ export default function ProductsPage() {
          {/* About Section */}
           <section className="py-10 px-4 sm:px-6">
             {/* पानी / Water Section */}
-            <div className="max-w-6xl mx-auto mb-16">
-              <div className="w-full mb-6">
+            <div className="max-w-6xl mx-auto mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+              
+              {/* Text Content */}
+              <div>
                 <h2 className="text-2xl font-bold mb-4">
                   <span className="bg-blue-600 text-white px-4 py-1 rounded-tr-md inline-block">
                     पानी / Water
@@ -166,8 +168,20 @@ export default function ProductsPage() {
                   Kangen Water को प्रयोगले तपाई केवल राम्रो Hydration को विकल्प मात्र रोज्नु हुदैन बरु तपाई आफू र आफ्नो परिवारको स्वास्थ्य अनि दीर्घायु प्रति प्राथमिकता दिने जीवनशैलीलाई अपनाउँदै हुनुहुन्छ ।
                 </p>
               </div>
+
+              {/* Image */}
+              <div className="flex justify-center items-start">
+                <Image
+                  src="/genimgs/kangenmean.png"
+                  alt="Kangen Meaning"
+                  width={450}
+                  height={550}
+                  className="rounded-xl shadow-lg border border-blue-100 object-contain"
+                />
+              </div>
             </div>
           </section>
+
 
 
 

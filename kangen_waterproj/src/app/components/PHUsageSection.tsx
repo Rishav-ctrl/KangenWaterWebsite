@@ -43,7 +43,7 @@ const phData = [
 
 export default function PHUsageSection() {
   return (
-    <section className="bg-white py-8 px-4 sm:px-8">
+    <section className=" py-4 px-4 sm:px-16">
       <h2 className="text-xl sm:text-2xl font-bold text-center text-blue-900 mb-4">
         KANGEN WATER® केवल एक उत्पादन मात्र होइन, यो एक जिवनशैली क्रांति हो ।
       </h2>
