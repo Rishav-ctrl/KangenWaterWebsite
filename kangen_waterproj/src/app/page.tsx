@@ -7,7 +7,7 @@ import { useSwipeable } from 'react-swipeable';
 import { Span } from 'next/dist/trace';
 import PHUsageSection from './/components/PHUsageSection';
 
-const images = [ '/sliders/slider4.png','/sliders/slider1.png', '/sliders/slider3.png', '/sliders/slider5.png'];
+const images = [ '/sliders/slider6.png','/sliders/slider1.png', '/sliders/slider3.png', '/sliders/slider5.png'];
 
 const articles = [
   { title: 'Cristiano Ronaldo Drinks Kangen Water!', content: 'Cristiano Ronaldo जस्तो स्वास्थ्यप्रेमी व्यक्तिले Kangen Water K8 प्रयोग गर्छन् भन्ने देखाउन पाउँदा हामी खुसी छौं। स्वास्थ्य जीवनशैली चाहने सबैलाई प्रेरणा मिलोस्। आजै सम्पर्क गर्नुहोस् र आफ्नो Kangen प्राप्त गर्नुहोस्! 💧👍🏼', link :'https://www.facebook.com/watch/?v=656559738821284' },
