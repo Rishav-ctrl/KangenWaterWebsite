@@ -29,6 +29,9 @@ export default function ScienceSection() {
               "जसरी काटेको स्याउ चाँडै खैरो हुन्छ (oxidation), हाम्रो छाला पनि बिस्तारै aging गर्छ। Kangen Water को antioxidants ले यो गति कम गर्छ।"
             </p>
             <div className="mt-4 flex justify-center">
+              <Image src="/genimgs/ORPpng.png" alt="Oxidation Example" width={500} height={400} />
+            </div>
+            <div className="mt-4 flex justify-center">
               <Image src="/genimgs/aging.png" alt="Oxidation Example" width={300} height={200} />
             </div>
           </div>
@@ -49,6 +52,7 @@ export default function ScienceSection() {
                 <li><strong>Alkaline:</strong> Vegetables, Fruits, Kangen Water</li>
               </ul>
               <div className="mt-4">
+                <Image src="/genimgs/PHpng.png" alt="pH Scale" width={500} height={100} />
                 <Image src="/genimgs/acidalk.png" alt="pH Scale" width={500} height={100} />
               </div>
             </div>
@@ -68,8 +72,9 @@ export default function ScienceSection() {
             <p className="text-gray-600 italic">
               "Nepali मा भनौं भने, Kangen पानी 'हल्का' लाग्छ र छिट्टै पिउँदा energy दिन्छ!"
             </p>
-            <div className="mt-4">
-              <Image src="/genimgs/microclustering.png" alt="Water Molecule Clusters" width={300} height={500} />
+            <div>
+              <Image src="/genimgs/micclusterpng.png" alt="Water Molecule Clusters" width={500} height={400} />
+              <Image src="/genimgs/microclustering.png" alt="Water Molecule Clusters" width={500} height={400} />
             </div>
           </div>
         </div>
