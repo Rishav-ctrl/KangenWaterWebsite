@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
 import { Span } from 'next/dist/trace';
+import PHUsageSection from './/components/PHUsageSection';
 
 const images = [ '/sliders/slider4.png','/sliders/slider1.png', '/sliders/slider2.png', '/sliders/slider3.png', '/sliders/slider5.png'];
 
@@ -316,60 +317,12 @@ export default function ProductsPage() {
               </div>
             </div>
 
-        <div className="max-w-4xl mx-auto mb-12">
+        <div className="max-w-8xl mx-auto mb-20">
           <h2 className="text-xl font-bold text-gray-800 mb-4">कङ्गन पानीका विभिन्न प्रकार र तिनीहरूको प्रयोग:</h2>
           <div className="overflow-x-auto">
-            <table className="min-w-full border border-gray-300">
-              <thead className="bg-gray-100">
-                <tr>
-                  <th className="py-2 px-4 border-b font-bold text-gray-800">क्रम संख्या</th>
-                  <th className="py-2 px-4 border-b font-bold text-gray-800">PH स्तर</th>
-                  <th className="py-2 px-4 border-b font-bold text-gray-800">पानीको प्रकार</th>
-                  <th className="py-2 px-4 border-b font-bold text-gray-800">प्रयोग</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="py-2 px-4 border-b text-black">१</td>
-                  <td className="py-2 px-4 border-b text-black">PH ८.५ / ९.० / ९.५</td>
-                  <td className="py-2 px-4 border-b text-black">अल्कालाइन पानी</td>
-                  <td className="py-2 px-4 border-b text-left text-black">दैनिक पिउने पानी, चिया, सुप बनाउन, खाना पकाउन (शुरुवातमा ८.५ PH को पानी पिउनुपर्ने र ७ देखि १० दिन पछि अरु लेबलको पानी पिउनु पर्दछ अनि ९.५ को पानी सधै पिउदा हुन्छ)।</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b text-black">२</td>
-                  <td className="py-2 px-4 border-b text-black">PH ७.०</td>
-                  <td className="py-2 px-4 border-b text-black">सफा पानी</td>
-                  <td className="py-2 px-4 border-b text-left text-black">औषधि खादा यो पानी पिउन सकिन्छ र बच्चालाई दुध पाउडरमा मिलाएर खुवाउन सकिन्छ साथै बालबालिकाको मस्तिष्कको स्मरणशक्ति बढाउछ।</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b text-black">३</td>
-                  <td className="py-2 px-4 border-b text-black">PH ६.०</td>
-                  <td className="py-2 px-4 border-b text-black">ब्युटी वाटर</td>
-                  <td className="py-2 px-4 border-b text-left text-black">यो पानी अनुहार धुन, दात ब्रस गर्न, तौलिया धुन र अनुहारको सुख्खापन हटाउन, चिल्लोपन नियन्त्रण गर्न अनि डण्डीफोहर हटाउन प्रयोग हुन्छ।</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b text-black">४</td>
-                  <td className="py-2 px-4 border-b text-black">PH २.५</td>
-                  <td className="py-2 px-4 border-b text-black">एसिडिक पानी</td>
-                  <td className="py-2 px-4 border-b text-left text-black">शरीरमा आउने घाउ खटिरा, छालामा आउने दादमा स्प्रे द्वारा छर्कने र खेती-पातीमा लागेका किटाणु मार्न साथै घरको भान्सा र बाथारोम सफा गरि किटानु ब्याक्टेरिया मार्न प्रायो गरिन्छ।</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-4 border-b text-black">५</td>
-                  <td className="py-2 px-4 border-b text-black">PH ११.५</td>
-                  <td className="py-2 px-4 border-b text-black">स्ट्रोङ अल्कालाइन पानी</td>
-                  <td className="py-2 px-4 border-b text-left text-black">तरकारी, चामल, सागसब्जी, फलफुल, मासु, टमाटर आदिमा भएको केमिकल धोएर हटाइ पुरै अर्घानिक बनाउदछ।</td>
-                </tr>
-              </tbody>
-            </table>
+             <PHUsageSection />
           </div>
         </div>
-
-        <div className="mt-8 text-center">
-          <Link href="/about" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Know More
-          </Link>
-        </div>
-      
   );
 
       {/* Info Section */}
@@ -426,9 +379,6 @@ export default function ProductsPage() {
     </div>
   ))}
 </div>
-
-
-
   
       {/* Floating "Did You Know" Bubble */}
       <div className="fixed bottom-6 right-6 z-50">

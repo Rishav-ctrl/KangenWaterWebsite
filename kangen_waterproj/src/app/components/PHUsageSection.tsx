@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const phData = [
   {
@@ -77,6 +78,13 @@ export default function PHUsageSection() {
         <p className="text-sm">
           Kangen Water® Realizing True Health.
         </p>
+        {/* Button */}
+        <Link href="/about">
+          <span className="inline-block bg-white text-blue-900 font-semibold px-5 py-2 rounded hover:bg-blue-100 transition">
+            Know More
+          </span>
+        </Link>
+          
       </div>
     </section>
   );
