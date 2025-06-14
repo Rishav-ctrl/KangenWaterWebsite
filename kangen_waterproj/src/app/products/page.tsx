@@ -74,8 +74,8 @@ const products: Product[] = [
   images: ['waterfilter.gif', 'working.jpg'],
 },
   {
-  name: 'LeveLuk JR II',
-  img: 'jr2.jpg',
+  name: 'LeveLuk JR IV',
+  img: 'jr2.png',
   features: [
     '3 Platinum-Plated Titanium Plates',
     'Large LCD Panel',
@@ -87,7 +87,7 @@ const products: Product[] = [
     'Produces 5 Types of Water: Strong Kangen Alkaline water, Ionized Alkaline Drinking Water, Purified Neutral Water, Acidic Water (Beauty Water), Strong Acidic Water',
   ],
   description:
-    'The LeveLuk JR II is capable of producing the same 5 different types of water as the other models in the LeveLuk series. The JR II’s electrolysis chamber comprises 3 solid platinum-coated titanium plates compared to the SD 501’s 7 plates.\nCompared to the SD 501, the JR II has a slower flow rate and the alkaline water produced by it has a somewhat weaker oxidation reduction potential (ORP), yet provides many of the same benefits as the SD 501 at a lower price point. This model is recommended for singles or couples on a budget, where their consumption will not be as high as a typical family.',
+    'The JRIV has four solid electrode plates, which reduces the energy consumption. Due to the lower power consumption and fewer plates, this machine is considered one of Enagic’s “starter” models. Generates: Strong Kangen Water, Kangen Water®, Neutral Water, Beauty Water, and Strong Acidic Water. With just a touch of a button, you can have access to any of the 4 waters you choose. Your machine will confirm the water you have selected and in moments the machine will generate healthy, ionized water. Your JRIV will even notify you when it’s time to change the water filter via a message on the LCD Panel and a buzzer sound.The JRIV has four solid electrode plates which reduces the energy consumption. Due to the solid platinum-coated titanium plates, this unit can still produce the strong acid and strong Kangen waters. Due to the lower power consumption and fewer plates, this machine is only recommended for singles or couples. The built-in tank for the electrolysis enhancer saves you the trouble of putting in the electrolysis enhancer which is necessary to obtain strong acid water and strong Kangen Water, and allows you to produce those kinds of water steadily and continuously that has excellent effects.',
   specs: [
     ['Power Voltage', 'AC 100V, 50/60Hz'],
     ['Power Consumption', '~ 120 W'],
@@ -194,33 +194,7 @@ const products: Product[] = [
   ],
   images: ['waterfilter.gif', 'working.jpg'],
 },
-  {
-  name: 'Kangen LeveLuk R',
-  img: 'levelukr.jpg',
-  features: [
-    '3 Platinum-Plated Titanium Plates',
-    'LCD Panel',
-    '1 High Grade Filter',
-    'Diverters',
-    'Instruction Manuals',
-    'Produces 3 Types of Water: Ionized Alkaline Drinking Water, Purified Neutral Water, Acidic Water (Beauty Water)',
-  ],
-  description:
-    'The Kangen LeveLuk R is a starter model of the Kangen Water LeveLuk series. The LeveLuk R was designed to be affordable and to fit into any budget. This allows families or small households to enjoy the benefits of Kangen Alkaline Water without breaking the bank.\nThe electrolysis chamber’s 3 solid platinum-coated titanium plates allows it to run continuously for 30 minutes.',
-  specs: [
-    ['Power Voltage', 'AC 100V, 50/60Hz, 2.7A'],
-    ['Power Consumption', 'Approx. 120W (under maximum electrolysis function)'],
-    ['Built-in System', 'Continuous Ionized Electrolysis Water Generator System (with built-in flow rate sensor)'],
-    ['Dispensing Flow Rate (Kangen Water®)', '1.5-5.5'],
-    ['Dispensing Flow Rate (Acidic water)', '1.5-4.5'],
-    ['3 Types of Water', 'Kangen Water® / 3 levels (approx. pH 8.5-9.5), Clean water (pH 7), Acidic water (approx. pH 6.0)'],
-    ['Cleaning System', 'Auto cleaning system (periodically controlled by internal computer)'],
-    ['Electrolysis Enhancer', 'N/A'],
-    ['Electrode Plates', '3'],
-    ['Electrode Material', 'Platinum-plated Titanium'],
-  ],
-  images: ['waterfilter.gif', 'product_levelukr_scale.jpg'],
-},
+ 
  {
   name: 'Kangen Ukon',
   img: 'ukon.jpg',
