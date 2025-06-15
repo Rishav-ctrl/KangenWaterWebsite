@@ -26,7 +26,7 @@
 <section id="about" className="py-24 md:py-9 bg-white">
   <div className="max-w-6xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     <div>
-      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water?</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-blue-700 mb-6 leading-snug">What is Kangen Water®?</h2>
       <p className="text-lg md:text-xl text-gray-700 mb-6">
         Kangen Water® is delicious water created from
         Enagic® innovative water technology, contains a lot
