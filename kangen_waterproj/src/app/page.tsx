@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
 import { Span } from 'next/dist/trace';
 import PHUsageSection from './/components/PHUsageSection';
+import EngPH1 from './/components/EngPH1';
 
 const images = [ '/sliders/slider6.png','/sliders/slider1.png', '/sliders/slider3.png', '/sliders/slider5.png'];
 
@@ -335,8 +336,10 @@ export default function ProductsPage() {
           <h2 className="text-xl font-bold text-gray-800 mb-4">कङ्गन पानीका विभिन्न प्रकार र तिनीहरूको प्रयोग:</h2>
           <div className="overflow-x-auto">
              <PHUsageSection />
+             <EngPH1 />
           </div>
         </div>
+         
   );
 
       {/* Info Section */}
