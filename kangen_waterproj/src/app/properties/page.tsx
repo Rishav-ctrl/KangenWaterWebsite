@@ -23,7 +23,7 @@ export default function ScienceSection() {
             <h3 className="text-2xl font-semibold text-blue-600 mb-3">🛡️ Antioxidant Power (Negative ORP)</h3>
             <p className="text-gray-700 mb-4">
               <strong>Free Radicals</strong> ले शरीरमा oxidation बढाउँछन् जसले aging र disease ल्याउँछ।<br />
-              <strong>Kangen Water®®</strong> को Negative ORP (~ -400 - -800) ले यो oxidation process लाई slow गर्छ।
+              <strong>Kangen Water®</strong> को Negative ORP (~ -400 - -800) ले यो oxidation process लाई slow गर्छ।
             </p>
             <p className="text-gray-600 italic">
               "जसरी काटेको स्याउ चाँडै खैरो हुन्छ (oxidation), हाम्रो छाला पनि बिस्तारै aging गर्छ। Kangen Water® को antioxidants ले यो गति कम गर्छ।"

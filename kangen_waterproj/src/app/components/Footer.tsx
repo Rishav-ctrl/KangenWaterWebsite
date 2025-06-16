@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { Facebook, Instagram, Youtube, Phone, Mail, Globe } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Phone, Mail, Globe} from 'lucide-react';
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -65,9 +66,12 @@ export default function Footer() {
           <div className="mt-4">
             <h2 className="text-xl font-semibold text-blue-600 mb-2">Follow Us</h2>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" className="text-blue-600 hover:text-blue-800"><Facebook size={20} /></a>
+              {/* <a href="https://facebook.com" target="_blank" className="text-blue-600 hover:text-blue-800"><Facebook size={20} /></a>
               <a href="https://instagram.com" target="_blank" className="text-pink-500 hover:text-pink-700"><Instagram size={20} /></a>
-              <a href="https://youtube.com" target="_blank" className="text-red-500 hover:text-red-700"><Youtube size={20} /></a>
+              <a href="https://youtube.com" target="_blank" className="text-red-500 hover:text-red-700"><Youtube size={20} /></a> */}
+              <a href="https://www.tiktok.com/@kangenwaternepal7?_t=ZS-8xG4BlUDuv2&_r=1" target="_blank" className="text-black hover:text-gray-800">
+                <FaTiktok size={20} />
+              </a>
             </div>
           </div>
         </div>
@@ -75,7 +79,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="text-center text-sm text-gray-500 border-t border-blue-200 py-4">
-        © {year} Kangen Water Nepal. All rights reserved. | Designed with ❤️ by RG
+      © {year} Kangen Water Nepal. All rights reserved. | Designed with ❤️ by <a href="https://www.linkedin.com/in/rishav-gautam-b8817621a/" target="_blank" rel="noopener noreferrer" className="text-black font-semibold">RG</a>
       </div>
     </footer>
   );

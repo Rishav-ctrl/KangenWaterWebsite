@@ -39,7 +39,7 @@ const phData = [
   {
     title: 'pH11.5 Strong Kangen Water®\nRemove Pesticides and Chemicals',
     description:
-      'फलफूल, सागसब्जी, दाल, चामल आदिमा भएको Pesticides, Preservatives And Chemical Remove गर्न्नको लागि प्रयोग गरिन्छ । साथै क्यान्सर भएका बिरामीका का लगि डाक्टरको प्रोटोकोल अनुसार पिलाउन प्रयोग गरिन्छ ।',
+      'फलफूल, सागसब्जी, दाल, चामल आदिमा भएको Pesticides, Preservatives And Chemical Remove गर्न्नको लागि प्रयोग गरिन्छ । साथै क्यान्सर भएका बिरामीका लागि डाक्टरको प्रोटोकोल अनुसार पिलाउन प्रयोग गरिन्छ ।',
     image: '/images/contentimg5.png',
     bgColor: 'bg-purple-50',
     titleBg: 'bg-purple-200',
