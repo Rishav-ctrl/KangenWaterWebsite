@@ -8,7 +8,7 @@ export default function ScienceSection() {
         {/* Hero Section */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-4">
-            Kangen Water का 3 अद्भुत Properties!    
+            Kangen Water® का 3 अद्भुत Properties!    
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
             Antioxidant power, Alkalinity, र Micro-Clustered Molecules ले तपाईंको स्वास्थ्यलाई नयाँ उचाइमा पुर्याउँछ। जानौं कसरी!
@@ -23,10 +23,10 @@ export default function ScienceSection() {
             <h3 className="text-2xl font-semibold text-blue-600 mb-3">🛡️ Antioxidant Power (Negative ORP)</h3>
             <p className="text-gray-700 mb-4">
               <strong>Free Radicals</strong> ले शरीरमा oxidation बढाउँछन् जसले aging र disease ल्याउँछ।<br />
-              <strong>Kangen Water</strong> को Negative ORP (~ -470) ले यो oxidation process लाई slow गर्छ।
+              <strong>Kangen Water®®</strong> को Negative ORP (~ -400 - -800) ले यो oxidation process लाई slow गर्छ।
             </p>
             <p className="text-gray-600 italic">
-              "जसरी काटेको स्याउ चाँडै खैरो हुन्छ (oxidation), हाम्रो छाला पनि बिस्तारै aging गर्छ। Kangen Water को antioxidants ले यो गति कम गर्छ।"
+              "जसरी काटेको स्याउ चाँडै खैरो हुन्छ (oxidation), हाम्रो छाला पनि बिस्तारै aging गर्छ। Kangen Water® को antioxidants ले यो गति कम गर्छ।"
             </p>
             <div className="mt-4 flex justify-center">
               <Image src="/genimgs/ORPpng.png" alt="Oxidation Example" width={500} height={400} />
@@ -40,7 +40,7 @@ export default function ScienceSection() {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <h3 className="text-2xl font-semibold text-blue-600 mb-3">⚖️ Alkalinity</h3>
             <p className="text-gray-700 mb-4">
-              अधिकांश रोगहरू acidic शरीरमा फस्टाउँछन्। Kangen Water ले तपाईंको शरीरलाई alkaline राख्न मद्दत गर्छ।
+              अधिकांश रोगहरू acidic शरीरमा फस्टाउँछन्। Kangen Water® ले तपाईंको शरीरलाई alkaline राख्न मद्दत गर्छ।
             </p>
             <p className="text-gray-600 italic mb-3">
               “Disease cannot thrive in an alkaline body.” — Dr. Otto Warburg
@@ -49,11 +49,11 @@ export default function ScienceSection() {
               <p className="font-semibold text-sm mb-2 text-black">Acidic vs Alkaline Foods</p>
               <ul className="text-sm text-gray-700">
                 <li><strong>Acidic:</strong> Soda, Red Meat, Fried Foods</li>
-                <li><strong>Alkaline:</strong> Vegetables, Fruits, Kangen Water</li>
+                <li><strong>Alkaline:</strong> Vegetables, Fruits, Kangen Water®</li>
               </ul>
               <div className="mt-4">
                 <Image src="/genimgs/PHpng.png" alt="pH Scale" width={500} height={100} />
-                <Image src="/genimgs/acidalk.png" alt="pH Scale" width={500} height={100} />
+                <Image src="/genimgs/adidalk.png" alt="pH Scale" width={500} height={100} />
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function ScienceSection() {
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <h3 className="text-2xl font-semibold text-blue-600 mb-3">💧 Micro-Clustering</h3>
             <p className="text-gray-700 mb-4">
-              साधारण पानीमा ठूलो molecular cluster हुन्छ (~15-20 molecules), Kangen Water मा सानो (~5-6 molecules)।
+              साधारण पानीमा ठूलो molecular cluster हुन्छ (~15-20 molecules), Kangen Water® मा सानो (~5-6 molecules)।
             </p>
             <ul className="text-sm text-gray-700 list-disc pl-5 mb-4">
               <li>छिटो Absorption</li>
@@ -107,7 +107,7 @@ export default function ScienceSection() {
     </tr>
     <tr>
       <td className="px-4 py-2 border">Found in Pollution, Smoke<br /><span className="text-sm text-gray-500">धुवाँ, प्रदूषणमा पाइन्छ</span></td>
-      <td className="px-4 py-2 border">Found in Fruits, Kangen Water<br /><span className="text-sm text-gray-500">फलफूल र Kangen Water मा पाइन्छ</span></td>
+      <td className="px-4 py-2 border">Found in Fruits, Kangen Water®<br /><span className="text-sm text-gray-500">फलफूल र Kangen Water® मा पाइन्छ</span></td>
     </tr>
     <tr>
       <td className="px-4 py-2 border">Make Skin Dull<br /><span className="text-sm text-gray-500">छाला मर्दा र थाकेको देखिन्छ</span></td>
@@ -126,7 +126,7 @@ export default function ScienceSection() {
 
           </div>
           <p className="text-center text-sm text-gray-600 mt-4">
-            Kangen Water — Natural Source of Antioxidants to protect you from Free Radical damage.
+            Kangen Water® — Natural Source of Antioxidants to protect you from Free Radical damage.
           </p>
         </div>
 

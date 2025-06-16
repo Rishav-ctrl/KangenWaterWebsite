@@ -150,7 +150,7 @@
                 width={180}
                 height={180}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => openModal('/certificate 1.png')}
+               
               />
               <Image
                 src="/certificates/certificate 2.png"
@@ -158,7 +158,7 @@
                 width={180}
                 height={180}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => openModal('/certificate 2.png')}
+               
               />
               <Image
                 src="/certificates/certificate 3.png"
@@ -166,7 +166,7 @@
                 width={180}
                 height={180}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => openModal('/certificate 3.png')}
+              
               />
               <Image
                 src="/certificates/certificate 4.png"
@@ -174,7 +174,7 @@
                 width={180}
                 height={180}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => openModal('/certificate 4.png')}
+              
               />
               <Image
                 src="/certificates/certificate 5.png"
@@ -182,7 +182,7 @@
                 width={180}
                 height={180}
                 className="rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-                onClick={() => openModal('/certificate 5.png')}
+               
               />
             </div>
           </div>

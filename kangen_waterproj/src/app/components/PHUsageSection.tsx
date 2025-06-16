@@ -7,7 +7,7 @@ const phData = [
   {
     title: 'pH8.5, 9.0, 9.5 - Healthy Alkaline Water\nDrinking and Cooking',
     description:
-      'पिउनको गलि, खाना पकाउन, चिया, कफ्फि, सुप बनाउन्न Plants Flower मा राख्नको लागि, आयुर्वेदिक औषधी सेवन गर्न्नको लागि, Alcohol मा मिसाएर पिउनको लागि प्रयोग गरिन्छ ।',
+      'पिउनको लागि, खाना पकाउन, चिया, कफि, सुप बनाउन्न Plants Flower मा राख्नको लागि, आयुर्वेदिक औषधी सेवन गर्न्नको लागि, Alcohol मा मिसाएर पिउनको लागि प्रयोग गरिन्छ ।',
     image: '/images/contentimg1.png',
     bgColor: 'bg-blue-50',
     titleBg: 'bg-blue-200',
@@ -15,7 +15,7 @@ const phData = [
   {
     title: 'pH7.0 Clean Water\nBaby Formula and Medication',
     description:
-      'आमाको दुध पिउने बच्चाहरुऒलाई पिलाउन र उनीहरुको खाना बनाउनको लागि प्रयोग गरिन्छ । एलोपेथिक औषधी सेवन गर्न का लागि पनि क्लीन Water को प्रयोग गरिन्छ ।',
+      'आमाको दूध पिउने बच्चाहरूलाई खुवाउन र उनीहरूको खाना बनाउनका लागि clean water प्रयोग गरिन्छ। एलोपेथिक औषधि सेवन गर्नका लागि पनि clean water नै प्रयोग गरिन्छ।',
     image: '/images/contentimg2.png',
     bgColor: 'bg-green-50',
     titleBg: 'bg-green-200',
@@ -23,7 +23,7 @@ const phData = [
   {
     title: 'pH4.0-6.0 Beauty Water, Skin Tonner\nHair and Skin Care',
     description:
-      'Skin, Face And Hair Care को लागि Skin Tonner को रूपमा प्रयोग गरिन्छ । यसको प्रयोगले अनुहारमा भएको चायाँ, पोतो, डण्डीफोर Open Pores, Dryness, Dark Circles जस्ता समस्यालाई नियंत्रण गरी प्राकृतिक चमकता ल्याउछ ।',
+      'Skin, Face And Hair Care को लागि Skin Tonner को रूपमा प्रयोग गरिन्छ । यसको प्रयोगले अनुहारमा भएको चायाँ, पोतो, डण्डीफोर Open Pores, Dryness, Dark Circles जस्ता समस्यालाई नियन्त्रण गरी प्राकृतिक चमकता ल्याउछ ।',
     image: '/images/contentimg3.png',
     bgColor: 'bg-yellow-50',
     titleBg: 'bg-yellow-200',
@@ -31,7 +31,7 @@ const phData = [
   {
     title: 'pH2.5 Strong Acidic Water\nSanitary/Antiseptic',
     description:
-      'शरीरमा आउने घाउखटिरा, चोटपटक, छालामा आउने घमौरा, दाद, Allergy Psoriasis, Eczema जस्तो Skin रोगहरुञ्छ प्रयोग गरिन्छ । यसले Antiseptic को रूपमा किटाणु, जीवाणु र फङ्गसलाई नष्ट गर्न सक्च ।',
+      'शरीरमा आउने घाउखटिरा, चोटपटक, छालामा आउने घमौरा, दाद, Allergy Psoriasis, Eczema जस्तो Skin रोगहरुमा प्रयोग गरिन्छ । यसले Antiseptic को रूपमा किटाणु, जीवाणु र फङ्गसलाई नष्ट गर्न सक्दछ ।',
     image: '/images/contentimg4.png',
     bgColor: 'bg-orange-50',
     titleBg: 'bg-orange-200',
@@ -39,7 +39,7 @@ const phData = [
   {
     title: 'pH11.5 Strong Kangen Water®\nRemove Pesticides and Chemicals',
     description:
-      'फलफूल, सागसब्जी, दाल, चामल आदिमा भएको Pesticides, Preservatives And Chemical Remove गर्न्नको लागि प्रयोग गरिन्छ । साथै क्यान्सर भएका बिरामीका कालगि डाक्टरको प्रोटोकोल अनुसार पिलाउन प्रयोग गरिन्छ ।',
+      'फलफूल, सागसब्जी, दाल, चामल आदिमा भएको Pesticides, Preservatives And Chemical Remove गर्न्नको लागि प्रयोग गरिन्छ । साथै क्यान्सर भएका बिरामीका का लगि डाक्टरको प्रोटोकोल अनुसार पिलाउन प्रयोग गरिन्छ ।',
     image: '/images/contentimg5.png',
     bgColor: 'bg-purple-50',
     titleBg: 'bg-purple-200',

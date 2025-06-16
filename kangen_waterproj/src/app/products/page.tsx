@@ -77,7 +77,7 @@ const products: Product[] = [
   name: 'LeveLuk JR IV',
   img: 'jr2.png',
   features: [
-    '3 Platinum-Plated Titanium Plates',
+    '4 Platinum-Plated Titanium Plates',
     'Large LCD Panel',
     '1 High Grade Filter',
     '1 Cleaning Cartridge',
@@ -98,7 +98,7 @@ const products: Product[] = [
     ],
     ['Electrolysis Enhancer', 'Solution additive pump system'],
     ['Cleaning System', 'Automatic cleaning system'],
-    ['Electrode plates', '3'],
+    ['Electrode plates', '4'],
     ['Electrode material', 'Platinum Coated Titanium'],
   ],
   images: ['waterfilter.gif', 'working.jpg'],
